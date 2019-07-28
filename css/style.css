@@ -1,0 +1,800 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.contactUs__bgImg:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-BoldItalic.eot");
+  src: url("../fonts/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/OpenSans-BoldItalic.ttf") format("truetype"), url("../fonts/OpenSans-BoldItalic.svg#OpenSans-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-ExtraBold.eot");
+  src: url("../fonts/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/OpenSans-ExtraBold.ttf") format("truetype"), url("../fonts/OpenSans-ExtraBold.svg#OpenSans-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBold.eot");
+  src: url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype"), url("../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-ExtraBoldItalic.eot");
+  src: url("../fonts/OpenSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/OpenSans-ExtraBoldItalic.svg#OpenSans-ExtraBoldItalic") format("svg");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBoldItalic.eot");
+  src: url("../fonts/OpenSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-SemiBoldItalic.woff") format("woff"), url("../fonts/OpenSans-SemiBoldItalic.ttf") format("truetype"), url("../fonts/OpenSans-SemiBoldItalic.svg#OpenSans-SemiBoldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Italic.eot");
+  src: url("../fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.ttf") format("truetype"), url("../fonts/OpenSans-Italic.svg#OpenSans-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-LightItalic.eot");
+  src: url("../fonts/OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/OpenSans-LightItalic.woff") format("woff"), url("../fonts/OpenSans-LightItalic.ttf") format("truetype"), url("../fonts/OpenSans-LightItalic.svg#OpenSans-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.eot");
+  src: url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ChaletComprime-CologneEighty';
+  src: url("../fonts/ChaletComprime-CologneEighty.eot");
+  src: url("../fonts/ChaletComprime-CologneEighty.eot?#iefix") format("embedded-opentype"), url("../fonts/ChaletComprime-CologneEighty.woff2") format("woff2"), url("../fonts/ChaletComprime-CologneEighty.woff") format("woff"), url("../fonts/ChaletComprime-CologneEighty.ttf") format("truetype"), url("../fonts/ChaletComprime-CologneEighty.svg#ChaletComprime-CologneEighty") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ChaletComprime-HongKongEighty';
+  src: url("./fonts/ChaletComprime-HongKongEighty.eot");
+  src: url("./fonts/ChaletComprime-HongKongEighty.eot?#iefix") format("embedded-opentype"), url("./fonts/ChaletComprime-HongKongEighty.woff2") format("woff2"), url("./fonts/ChaletComprime-HongKongEighty.woff") format("woff"), url("./fonts/ChaletComprime-HongKongEighty.ttf") format("truetype"), url("./fonts/ChaletComprime-HongKongEighty.svg#ChaletComprime-HongKongEighty") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "medical";
+  src: url("../fonts/medical.eot?f1951e");
+  src: url("../fonts/medical.eot?f1951e#iefix") format("embedded-opentype"), url("../fonts/medical.ttf?f1951e") format("truetype"), url("../fonts/medical.woff?f1951e") format("woff"), url("../fonts/medical.svg?f1951e#medical") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "medical" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-contactUscalendar:before {
+  content: ""; }
+
+.icon-contactUsemail:before {
+  content: ""; }
+
+.icon-contactUsfax:before {
+  content: ""; }
+
+.icon-contactUslocation:before {
+  content: ""; }
+
+.icon-contactUsphone:before {
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-skype:before {
+  content: ""; }
+
+.icon-twitter:before {
+  content: ""; }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  outline: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+img {
+  width: 100%; }
+
+/*---------------*/
+/*Titles*/
+.title {
+  margin: 0px auto;
+  text-align: center;
+  font-family: "ChaletComprime-CologneEighty";
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 90px;
+  color: #42b3e5;
+  margin-top: 50px;
+  text-transform: uppercase; }
+  .title.title__contrast {
+    color: #ffffff;
+    padding: 0; }
+
+/*Subtitles*/
+.subtitle {
+  margin: 0px auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #737373;
+  margin-bottom: 40px;
+  font-family: "ChaletComprime-CologneEighty"; }
+  .subtitle.subtitle__contrast {
+    color: #ffffff; }
+
+/*--------------*/
+.container_center {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; }
+
+/*header*/
+.container_center .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto 1fr;
+  grid-template-columns: auto auto 1fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 26px; }
+  .container_center .header .headerLogo__img {
+    margin-right: 10px; }
+    .container_center .header .headerLogo__img img {
+      width: 53px;
+      height: 61px; }
+  .container_center .header .headerLogo__text_title {
+    color: #383838;
+    font-family: "ChaletComprime-CologneEighty";
+    font-size: 70px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6.47px;
+    margin-bottom: -5px; }
+  .container_center .header .headerLogo__text_subtitle {
+    color: #373737;
+    font-family: "ProximaNova-Semibold";
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.1px; }
+  .container_center .header .headernav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .container_center .header .headernav__item {
+      list-style: none;
+      margin-right: 50px; }
+    .container_center .header .headernav__item:last-child {
+      margin-right: 0; }
+    .container_center .header .headernav__item_link {
+      text-decoration: none;
+      color: #737373;
+      font-family: "ChaletComprime-CologneEighty";
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.96px;
+      -webkit-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+      .container_center .header .headernav__item_link:hover {
+        color: #42b3e5;
+        cursor: pointer;
+        -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s; }
+
+/*end header*/
+/*block slider*/
+.providingSlider {
+  position: relative;
+  margin-bottom: 25px; }
+  .providingSlider .providingSlider__item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom; }
+  .providingSlider .container_center .providingSlider__text {
+    margin-top: 208px;
+    width: 439px;
+    height: 162px; }
+  .providingSlider .container_center .providingSlider__btn {
+    margin-top: 40px;
+    margin-bottom: 146px; }
+    .providingSlider .container_center .providingSlider__btn .providingSlider__btn_link {
+      color: #ffffff;
+      font-family: "ChaletComprime-CologneEighty";
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      text-decoration: none;
+      padding: 18px 66px;
+      min-width: 240px;
+      background-image: url(../img/providingBtnBg.png);
+      background-repeat: no-repeat; }
+      .providingSlider .container_center .providingSlider__btn .providingSlider__btn_link:hover {
+        opacity: 0.6; }
+  .providingSlider .slick-arrow {
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 47%;
+    margin-top: 0px;
+    z-index: 10; }
+  .providingSlider .slick-prev {
+    background-image: url(../img/providingArrowLef.svg);
+    left: 0.5%;
+    opacity: 0.3; }
+    .providingSlider .slick-prev:hover {
+      opacity: 0.9; }
+  .providingSlider .slick-next {
+    background-image: url(../img/providingArrowRig.svg);
+    left: 96%;
+    opacity: 0.3; }
+    .providingSlider .slick-next:hover {
+      opacity: 0.9; }
+
+/*end slide*/
+/*Block aboutUs*/
+#about {
+  padding-bottom: 60px; }
+  #about .about_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    #about .about_list .about_item {
+      width: 363px;
+      height: 503px;
+      background: url(../img/aboutBagDark.png) no-repeat center center;
+      -webkit-transition-property: background;
+      -o-transition-property: background;
+      transition-property: background;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+      #about .about_list .about_item .about_img img {
+        border-bottom: 4px solid #fff; }
+      #about .about_list .about_item .star {
+        width: 67px;
+        height: 44px;
+        background: #fff;
+        position: relative;
+        bottom: 6%;
+        left: 40%; }
+      #about .about_list .about_item .star:before,
+      #about .about_list .about_item .star:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        border-left: 33px solid transparent;
+        border-right: 33px solid transparent; }
+      #about .about_list .about_item .star:before {
+        top: -15px;
+        border-bottom: 15px solid #fff; }
+      #about .about_list .about_item .star:after {
+        bottom: -15px;
+        border-top: 15px solid #fff; }
+      #about .about_list .about_item .star_text {
+        color: #272727;
+        font-family: "ChaletComprime-CologneEighty";
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2.83px;
+        text-align: center;
+        padding-top: 7px;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s; }
+    #about .about_list .about_item:hover {
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      background: url(../img/aboutBagLight.png) no-repeat center center; }
+      #about .about_list .about_item:hover .star_text {
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        color: #42b3e5; }
+    #about .about_list .about_title {
+      text-align: center;
+      color: #ffffff;
+      font-family: "ChaletComprime-CologneEighty";
+      font-size: 36px;
+      font-weight: 400;
+      text-transform: uppercase; }
+    #about .about_list .about_text {
+      text-align: center;
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 20px;
+      padding: 10px 35px 0px 35px; }
+
+/*end aboutUs*/
+/*Block services*/
+#services {
+  padding-top: 60px;
+  background-image: url(../img/aboutBagLight.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.boxes {
+  margin-top: 73px;
+  /*Расстояние между плитками*/
+  font-size: 0;
+  /*Сбрасываем высоту символов*/
+  letter-spacing: -1px;
+  /**/
+  margin-left: -99px;
+  /*Расстояние между плитками*/
+  /*Делаю отрицательный внутренний отступ у родителя, равный отступу между плитками*/
+  /*Очищаем поток*/ }
+  .boxes:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%; }
+  .boxes .boxes__item {
+    display: inline-block;
+    /*Дочерний элемент делаем строчно блочным*/
+    vertical-align: top;
+    /*Выравниваем по вертикали*/
+    font-size: initial;
+    /*Восстанавливаем размер шрифта*/
+    letter-spacing: initial;
+    /**/
+    width: 25%;
+    /*Устанавливаем ширину, в зависимости от количества плиток по горизонтали*/
+    padding-left: 99px;
+    /*Установливаю внутренний отступ у плиток*/
+    margin-bottom: 20px;
+    /*Нижний отступ*/ }
+  .boxes .boxes__img {
+    margin-bottom: 35px; }
+    .boxes .boxes__img img {
+      display: block;
+      /*Делаю картинку блочным элементом*/
+      width: 100%; }
+  .boxes .boxes__text {
+    text-align: center;
+    color: #ffffff;
+    font-family: "";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 108px; }
+
+/*end services*/
+/*Block team*/
+.container_center .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 60px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .container_center .team__block {
+    width: 234px; }
+    .container_center .team__block .team__item {
+      position: relative;
+      background: url(../img/aboutBagLight.png) no-repeat center;
+      height: 234px;
+      padding: 17px 8px 26px 15px;
+      -webkit-transition-property: background;
+      -o-transition-property: background;
+      transition-property: background;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+
+.container_center .team__item:nth-child(1):before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-top-color: #399ac6;
+  border-width: 13px;
+  margin-left: -13px; }
+
+.container_center .team__item:nth-child(2):before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-bottom-color: #399ac6;
+  border-width: 13px;
+  margin-left: -13px; }
+
+.container_center .team__item:hover {
+  background: url(../img/aboutBagDark.png) no-repeat center;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.container_center .team__img {
+  width: 234px;
+  height: 234px; }
+
+.container_center .team__title {
+  color: #ffffff;
+  font-family: "ChaletComprime-CologneEighty";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+.container_center .team__text {
+  width: 195px;
+  height: 160px;
+  overflow: hidden; }
+  .container_center .team__text_text {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px; }
+
+/*end team*/
+/*Block contactus*/
+.contactUs {
+  background: url("../img/contactUsBg.png") no-repeat center center;
+  background-size: cover;
+  padding: 120px 0px; }
+  .contactUs__bgImg {
+    background: url("../img/contactUsBgForm.png") no-repeat center center;
+    background-size: cover;
+    padding-top: 40px; }
+    .contactUs__bgImg .title.title__contactUs {
+      color: #ffffff;
+      margin-bottom: 20px; }
+    .contactUs__bgImg .contactInf {
+      float: left;
+      margin-left: 30px;
+      margin-right: 110px;
+      min-width: 500px; }
+      .contactUs__bgImg .contactInf .contactInf__title {
+        color: #ffffff;
+        font-family: "ChaletComprime-CologneEighty";
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #13849c;
+        -webkit-box-shadow: 0 1px #53cde5;
+        box-shadow: 0 1px #53cde5;
+        margin-bottom: 20px; }
+      .contactUs__bgImg .contactInf .contactInf__list {
+        list-style: none;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 30px auto;
+        grid-template-columns: 30px auto; }
+      .contactUs__bgImg .contactInf .icon-contactUscalendar {
+        font-size: 19px;
+        margin-top: 10px;
+        color: #fff; }
+      .contactUs__bgImg .contactInf .icon-contactUslocation {
+        font-size: 22px;
+        margin-right: 10px;
+        margin-top: 10px;
+        color: #fff; }
+      .contactUs__bgImg .contactInf .icon-contactUsphone {
+        font-size: 22px;
+        margin-right: 10px;
+        margin-top: 10px;
+        color: #fff; }
+      .contactUs__bgImg .contactInf .icon-contactUsfax {
+        font-size: 22px;
+        margin-right: 10px;
+        margin-top: 10px;
+        color: #fff; }
+      .contactUs__bgImg .contactInf .icon-contactUsemail {
+        font-size: 19px;
+        margin-right: 10px;
+        margin-top: 10px;
+        color: #fff; }
+      .contactUs__bgImg .contactInf .contactInf__item {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-weight: 200; }
+        .contactUs__bgImg .contactInf .contactInf__item .email {
+          font-family: "Open Sans";
+          font-style: italic; }
+        .contactUs__bgImg .contactInf .contactInf__item .caption {
+          color: #ffffff;
+          font-family: "Open Sans";
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 44px; }
+    .contactUs__bgImg .contactMessag {
+      float: right;
+      margin-right: 30px;
+      max-width: 495px; }
+      .contactUs__bgImg .contactMessag .contactMessag__title {
+        color: #ffffff;
+        font-family: "ChaletComprime-CologneEighty";
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #13849c;
+        -webkit-box-shadow: 0 1px #53cde5;
+        box-shadow: 0 1px #53cde5;
+        margin-bottom: 20px; }
+      .contactUs__bgImg .contactMessag #form {
+        margin-bottom: 100px; }
+        .contactUs__bgImg .contactMessag #form fieldset {
+          border: none; }
+        .contactUs__bgImg .contactMessag #form .form__item {
+          list-style: none; }
+          .contactUs__bgImg .contactMessag #form .form__item .form__item_list label {
+            display: block;
+            padding-left: 20px;
+            background: #ffffff;
+            margin-bottom: 5px; }
+          .contactUs__bgImg .contactMessag #form .form__item .form__item_list label span {
+            display: inline-block;
+            opacity: 0.8;
+            color: #084a5c;
+            font-family: "Open Sans";
+            font-size: 13px;
+            font-weight: 400; }
+          .contactUs__bgImg .contactMessag #form .form__item .form__item_list .mess {
+            vertical-align: top;
+            padding-top: 10px; }
+        .contactUs__bgImg .contactMessag #form #name,
+        .contactUs__bgImg .contactMessag #form #email,
+        .contactUs__bgImg .contactMessag #form #phone,
+        .contactUs__bgImg .contactMessag #form #message {
+          border-style: none;
+          padding: 13px;
+          min-width: 410px;
+          outline: none; }
+        .contactUs__bgImg .contactMessag #form #message {
+          padding-bottom: 113px;
+          resize: none; }
+        .contactUs__bgImg .contactMessag #form .btn_submit {
+          float: right;
+          color: #ffffff;
+          font-family: "ChaletComprime-HongKongEighty";
+          font-size: 24px;
+          font-weight: 400;
+          text-transform: uppercase;
+          background: url(../img/bg_btn.png) center center;
+          padding: 17px 61px;
+          border: none;
+          cursor: pointer;
+          -webkit-transition-property: color, background;
+          -o-transition-property: color, background;
+          transition-property: color, background;
+          -webkit-transition-duration: 0.6s;
+          -o-transition-duration: 0.6s;
+          transition-duration: 0.6s; }
+        .contactUs__bgImg .contactMessag #form .btn_submit:hover {
+          background: #ffffff;
+          color: #000000;
+          -webkit-transition-duration: 0.6s;
+          -o-transition-duration: 0.6s;
+          transition-duration: 0.6s; }
+
+/*end contactus*/
+/*Block footer*/
+.footer {
+  padding-top: 26px;
+  padding-bottom: 26px; }
+  .footer .container_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .footer .container_center .footer__copyring {
+      opacity: 0.5;
+      color: #000000;
+      font-family: "Open Sans";
+      font-size: 12px;
+      font-weight: 300; }
+    .footer .container_center .footer__soc a {
+      text-decoration: none; }
+      .footer .container_center .footer__soc a .icon-facebook {
+        font-size: 23px;
+        color: #b1b1b1;
+        -webkit-transition-property: color;
+        -o-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.6s;
+        -o-transition-duration: 0.6s;
+        transition-duration: 0.6s; }
+      .footer .container_center .footer__soc a .icon-twitter {
+        font-size: 23px;
+        color: #b1b1b1;
+        margin: 0px 13px 0px 5px;
+        -webkit-transition-property: color;
+        -o-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.6s;
+        -o-transition-duration: 0.6s;
+        transition-duration: 0.6s; }
+      .footer .container_center .footer__soc a .icon-skype {
+        font-size: 23px;
+        color: #b1b1b1;
+        -webkit-transition-property: color;
+        -o-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.6s;
+        -o-transition-duration: 0.6s;
+        transition-duration: 0.6s; }
+    .footer .container_center .footer__soc .icon-facebook:hover,
+    .footer .container_center .footer__soc .icon-twitter:hover,
+    .footer .container_center .footer__soc .icon-skype:hover {
+      color: #42b3e5;
+      -webkit-transition-duration: 0.6s;
+      -o-transition-duration: 0.6s;
+      transition-duration: 0.6s; }
+
+/*end footer*/
