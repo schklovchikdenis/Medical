@@ -417,14 +417,14 @@ img {
         height: 0;
         position: absolute;
         left: 0;
-        border-left: 33px solid transparent;
-        border-right: 33px solid transparent; }
+        border-left: 34px solid transparent;
+        border-right: 34px solid transparent; }
       #about .about_list .about_item .star:before {
-        top: -15px;
-        border-bottom: 15px solid #fff; }
+        top: -17px;
+        border-bottom: 17px solid #fff; }
       #about .about_list .about_item .star:after {
-        bottom: -15px;
-        border-top: 15px solid #fff; }
+        bottom: -17px;
+        border-top: 17px solid #fff; }
       #about .about_list .about_item .star_text {
         color: #272727;
         font-family: "ChaletComprime-CologneEighty";
@@ -434,7 +434,6 @@ img {
         text-transform: uppercase;
         letter-spacing: 2.83px;
         text-align: center;
-        padding-top: 7px;
         -webkit-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s; }
