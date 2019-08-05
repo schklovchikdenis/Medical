@@ -62,36 +62,10 @@ img {
 .container_center {
   .header {
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding-top: 28px;
     padding-bottom: 26px;
-    .headerLogo__img {
-      margin-right: 10px;
-      img {
-        width: 53px;
-        height: 61px;
-      }
-    }
-
-    .headerLogo__text {
-      &_title {
-        color: #383838;
-        font-family: "ChaletComprime-CologneEighty";
-        font-size: 70px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 6.47px;
-        margin-bottom: -5px;
-      }
-      &_subtitle {
-        color: #373737;
-        font-family: "ProximaNova-Semibold";
-        font-size: 10px;
-        font-weight: 400;
-        letter-spacing: 0.1px;
-      }
-    }
 
     .headernav {
       display: flex;

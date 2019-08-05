@@ -264,34 +264,13 @@ img {
 
 /*header*/
 .container_center .header {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto 1fr;
-  grid-template-columns: auto auto 1fr;
+  grid-template-columns: auto 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding-top: 28px;
   padding-bottom: 26px; }
-  .container_center .header .headerLogo__img {
-    margin-right: 10px; }
-    .container_center .header .headerLogo__img img {
-      width: 53px;
-      height: 61px; }
-  .container_center .header .headerLogo__text_title {
-    color: #383838;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 70px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 6.47px;
-    margin-bottom: -5px; }
-  .container_center .header .headerLogo__text_subtitle {
-    color: #373737;
-    font-family: "ProximaNova-Semibold";
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 0.1px; }
   .container_center .header .headernav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -625,9 +604,7 @@ img {
         margin-bottom: 20px; }
       .contactUs__bgImg .contactInf .contactInf__list {
         list-style: none;
-        display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 30px auto;
         grid-template-columns: 30px auto; }
       .contactUs__bgImg .contactInf .icon-contactUscalendar {
         font-size: 19px;
