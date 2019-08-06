@@ -382,13 +382,17 @@ img {
       transition-duration: 0.5s; }
       #about .about_list .about_item .about_img img {
         border-bottom: 4px solid #fff; }
+      #about .about_list .about_item .about_star {
+        text-align: center;
+        margin-top: -8%;
+        margin-bottom: 10%; }
       #about .about_list .about_item .star {
+        display: inline-block;
+        border: 1px solid red;
         width: 67px;
-        height: 44px;
+        height: 60px;
         background: #fff;
-        position: relative;
-        bottom: 6%;
-        left: 40%; }
+        position: relative; }
       #about .about_list .about_item .star:before,
       #about .about_list .about_item .star:after {
         content: "";
@@ -400,19 +404,18 @@ img {
         border-right: 34px solid transparent; }
       #about .about_list .about_item .star:before {
         top: -17px;
-        border-bottom: 17px solid #fff; }
+        border-bottom: 10px solid #fff; }
       #about .about_list .about_item .star:after {
         bottom: -17px;
-        border-top: 17px solid #fff; }
+        border-top: 10px solid #fff; }
       #about .about_list .about_item .star_text {
+        border: 1px solid green;
         color: #272727;
         font-family: "ChaletComprime-CologneEighty";
         font-size: 60px;
         font-weight: 400;
-        line-height: 40px;
         text-transform: uppercase;
-        letter-spacing: 2.83px;
-        text-align: center;
+        vertical-align: middle;
         -webkit-transition-duration: 0.5s;
         -o-transition-duration: 0.5s;
         transition-duration: 0.5s; }
@@ -439,7 +442,6 @@ img {
       font-family: "Open Sans";
       font-size: 13px;
       font-weight: 300;
-      line-height: 20px;
       padding: 10px 35px 0px 35px; }
 
 /*end aboutUs*/
