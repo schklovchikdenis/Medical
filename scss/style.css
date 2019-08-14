@@ -1,10 +1,11 @@
 @charset "UTF-8";
+/* line 1, ../../Users/operator/Desktop/Medical/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 32, ../../Users/operator/Desktop/Medical/scss/_mixin.scss */
 .contact-us__bg-img:after {
   content: '';
   display: table;
@@ -108,6 +109,7 @@
   font-weight: normal;
   font-style: normal; }
 
+/* line 24, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "medical" !important;
@@ -121,35 +123,43 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+/* line 40, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 .icon-contactUscalendar:before {
   content: ""; }
 
+/* line 45, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 .icon-contactUsemail:before {
   content: ""; }
 
+/* line 50, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 .icon-contactUsfax:before {
   content: ""; }
 
+/* line 55, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 .icon-contactUslocation:before {
   content: ""; }
 
+/* line 60, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 .icon-contactUsphone:before {
   content: ""; }
 
+/* line 65, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 .icon-facebook:before {
   content: ""; }
 
+/* line 70, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 .icon-skype:before {
   content: ""; }
 
+/* line 75, ../../Users/operator/Desktop/Medical/scss/icon.scss */
 .icon-twitter:before {
   content: ""; }
 
 /* Slider */
+/* line 3, ../../Users/operator/Desktop/Medical/scss/slick.scss */
 .slick-slider {
   position: relative;
   display: block;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -161,18 +171,22 @@
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent; }
 
+/* line 17, ../../Users/operator/Desktop/Medical/scss/slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
   display: block;
   margin: 0;
   padding: 0; }
+  /* line 24, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-list:focus {
     outline: none; }
+  /* line 28, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-list.dragging {
     cursor: pointer;
     cursor: hand; }
 
+/* line 33, ../../Users/operator/Desktop/Medical/scss/slick.scss */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -181,6 +195,7 @@
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
+/* line 42, ../../Users/operator/Desktop/Medical/scss/slick.scss */
 .slick-track {
   position: relative;
   left: 0;
@@ -188,45 +203,59 @@
   display: block;
   margin-left: auto;
   margin-right: auto; }
+  /* line 50, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-track:before, .slick-track:after {
     content: "";
     display: table; }
+  /* line 56, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-track:after {
     clear: both; }
+  /* line 60, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-loading .slick-track {
     visibility: hidden; }
 
+/* line 64, ../../Users/operator/Desktop/Medical/scss/slick.scss */
 .slick-slide {
   outline: none;
   float: left;
   height: 100%;
   min-height: 1px;
   display: none; }
+  /* line 69, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   [dir="rtl"] .slick-slide {
     float: right; }
+  /* line 72, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-slide img {
     display: block; }
+  /* line 75, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-slide.slick-loading img {
     display: none; }
+  /* line 81, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-slide.dragging img {
     pointer-events: none; }
+  /* line 85, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-initialized .slick-slide {
     display: block; }
+  /* line 89, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-loading .slick-slide {
     visibility: hidden; }
+  /* line 93, ../../Users/operator/Desktop/Medical/scss/slick.scss */
   .slick-vertical .slick-slide {
     display: block;
     height: auto;
     border: 1px solid transparent; }
 
+/* line 99, ../../Users/operator/Desktop/Medical/scss/slick.scss */
 .slick-arrow.slick-hidden {
   display: none; }
 
+/* line 12, ../../Users/operator/Desktop/Medical/scss/style.scss */
 img {
   width: 100%; }
 
 /*---------------*/
 /*Titles*/
+/* line 18, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .title {
   margin: 0px auto;
   text-align: center;
@@ -237,11 +266,13 @@ img {
   color: #42b3e5;
   margin-top: 50px;
   text-transform: uppercase; }
+  /* line 29, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .title.title__contrast {
     color: #ffffff;
     padding: 0; }
 
 /*Subtitles*/
+/* line 36, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .subtitle {
   margin: 0px auto;
   text-align: center;
@@ -252,10 +283,12 @@ img {
   color: #737373;
   margin-bottom: 40px;
   font-family: "ChaletComprime-CologneEighty"; }
+  /* line 47, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .subtitle.subtitle__contrast {
     color: #ffffff; }
 
 /*--------------*/
+/* line 54, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .container_center {
   max-width: 1200px;
   padding-left: 15px;
@@ -263,26 +296,25 @@ img {
   margin: 0 auto; }
 
 /*header*/
+/* line 64, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .header {
   display: grid;
   grid-template-columns: auto 1fr;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding-top: 28px;
   padding-bottom: 26px; }
+  /* line 71, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .header-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end; }
+    /* line 75, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .header-nav__item {
       list-style: none;
       margin-right: 50px; }
+    /* line 80, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .header-nav__item:last-child {
       margin-right: 0; }
+    /* line 84, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .header-nav__link {
       text-decoration: none;
       color: #737373;
@@ -291,35 +323,35 @@ img {
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.96px;
-      -webkit-transition-property: color;
-      -o-transition-property: color;
       transition-property: color;
-      -webkit-transition-duration: 0.3s;
-      -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
+      /* line 95, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .header-nav__link:hover {
         color: #42b3e5;
         cursor: pointer;
-        -webkit-transition-duration: 0.3s;
-        -o-transition-duration: 0.3s;
         transition-duration: 0.3s; }
 
 /*end header*/
 /*block slider*/
+/* line 109, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .providing-slider {
   position: relative;
   margin-bottom: 25px; }
+  /* line 113, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .providing-slider__item {
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: bottom; }
+  /* line 120, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .providing-slider__text {
     margin-top: 208px;
     width: 439px;
     height: 162px; }
+  /* line 126, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .providing-slider__btn {
     margin-top: 40px;
     margin-bottom: 146px; }
+  /* line 131, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .providing-slider__link {
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
@@ -332,8 +364,10 @@ img {
     background-image: url(../img/providingBtnBg.png);
     background-repeat: no-repeat;
     background-size: cover; }
+    /* line 144, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .providing-slider__link:hover {
       opacity: 0.6; }
+  /* line 149, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .providing-slider .slick-arrow {
     border: none;
     outline: 0;
@@ -346,111 +380,110 @@ img {
     top: 47%;
     margin-top: 0px;
     z-index: 10; }
+  /* line 171, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .providing-slider .slick-prev {
     background-image: url(../img/providingArrowLef.svg);
     left: 0.5%;
     opacity: 0.3; }
+    /* line 178, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .providing-slider .slick-prev:hover {
       opacity: 0.9; }
+  /* line 183, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .providing-slider .slick-next {
     background-image: url(../img/providingArrowRig.svg);
     left: 96%;
     opacity: 0.3; }
+    /* line 190, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .providing-slider .slick-next:hover {
       opacity: 0.9; }
 
 /*end slider*/
 /*Block aboutUs*/
+/* line 200, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .about {
   padding-bottom: 60px; }
-  .about__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  /* line 203, ../../Users/operator/Desktop/Medical/scss/style.scss */
+  .about .about__list {
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between; }
-  .about__item {
-    width: 363px;
-    height: 503px;
-    background: url(../img/aboutBagDark.png) no-repeat center center;
-    -webkit-transition-property: background;
-    -o-transition-property: background;
-    transition-property: background;
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s; }
-    .about__item img {
-      border-bottom: 4px solid #fff; }
-    .about__item .about__star {
-      text-align: center;
-      margin-top: -30px;
-      margin-bottom: 30px; }
-    .about__item .star {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 67px;
-      height: 45px;
-      background: #fff;
-      position: relative; }
-    .about__item .star:before,
-    .about__item .star:after {
-      content: "";
-      width: 0;
-      height: 0;
-      position: absolute;
-      left: 0;
-      border-left: 34px solid transparent;
-      border-right: 34px solid transparent; }
-    .about__item .star:before {
-      top: -17px;
-      border-bottom: 16.5px solid #fff; }
-    .about__item .star:after {
-      bottom: -17px;
-      border-top: 17px solid #fff; }
-    .about__item .star__text {
-      color: #272727;
-      font-family: "ChaletComprime-CologneEighty";
-      font-size: 60px;
-      font-weight: 400;
-      text-transform: uppercase;
-      -webkit-transition-duration: 0.5s;
-      -o-transition-duration: 0.5s;
+    /* line 207, ../../Users/operator/Desktop/Medical/scss/style.scss */
+    .about .about__list .about__item {
+      width: 363px;
+      height: 503px;
+      background: url(../img/aboutBagDark.png) no-repeat center center;
+      transition-property: background;
       transition-duration: 0.5s; }
-  .about__item:hover {
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    background: url(../img/aboutBagLight.png) no-repeat center center; }
-    .about__item:hover .star__text {
-      -webkit-transition-duration: 0.5s;
-      -o-transition-duration: 0.5s;
+      /* line 215, ../../Users/operator/Desktop/Medical/scss/style.scss */
+      .about .about__list .about__item img {
+        border-bottom: 4px solid #fff; }
+      /* line 220, ../../Users/operator/Desktop/Medical/scss/style.scss */
+      .about .about__list .about__item .about__star {
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 30px; }
+      /* line 226, ../../Users/operator/Desktop/Medical/scss/style.scss */
+      .about .about__list .about__item .star {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 67px;
+        height: 45px;
+        background: #fff;
+        position: relative; }
+      /* line 236, ../../Users/operator/Desktop/Medical/scss/style.scss */
+      .about .about__list .about__item .star:before,
+      .about .about__list .about__item .star:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        border-left: 34px solid transparent;
+        border-right: 34px solid transparent; }
+      /* line 247, ../../Users/operator/Desktop/Medical/scss/style.scss */
+      .about .about__list .about__item .star:before {
+        top: -17px;
+        border-bottom: 16.5px solid #fff; }
+      /* line 252, ../../Users/operator/Desktop/Medical/scss/style.scss */
+      .about .about__list .about__item .star:after {
+        bottom: -17px;
+        border-top: 17px solid #fff; }
+      /* line 257, ../../Users/operator/Desktop/Medical/scss/style.scss */
+      .about .about__list .about__item .star__text {
+        color: #272727;
+        font-family: "ChaletComprime-CologneEighty";
+        font-size: 60px;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition-duration: 0.5s; }
+    /* line 267, ../../Users/operator/Desktop/Medical/scss/style.scss */
+    .about .about__list .about__item:hover {
       transition-duration: 0.5s;
-      color: #42b3e5; }
-  .about__title {
-    text-align: center;
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 36px;
-    font-weight: 400;
-    text-transform: uppercase; }
-  .about__text {
-    text-align: center;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 13px;
-    font-weight: 300;
-    padding: 10px 35px 0px 35px; }
+      background: url(../img/aboutBagLight.png) no-repeat center center; }
+      /* line 271, ../../Users/operator/Desktop/Medical/scss/style.scss */
+      .about .about__list .about__item:hover .star__text {
+        transition-duration: 0.5s;
+        color: #42b3e5; }
+    /* line 277, ../../Users/operator/Desktop/Medical/scss/style.scss */
+    .about .about__list .about__title {
+      text-align: center;
+      color: #ffffff;
+      font-family: "ChaletComprime-CologneEighty";
+      font-size: 36px;
+      font-weight: 400;
+      text-transform: uppercase; }
+    /* line 286, ../../Users/operator/Desktop/Medical/scss/style.scss */
+    .about .about__list .about__text {
+      text-align: center;
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 13px;
+      font-weight: 300;
+      padding: 10px 35px 0px 35px; }
 
 /*end aboutUs*/
 /*Block services*/
+/* line 301, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .services {
   padding-top: 60px;
   background-image: url(../img/aboutBagLight.png);
@@ -458,6 +491,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover; }
 
+/* line 309, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .boxes {
   margin-top: 73px;
   /*Расстояние между плитками*/
@@ -469,11 +503,13 @@ img {
   /*Расстояние между плитками*/
   /*Делаю отрицательный внутренний отступ у родителя, равный отступу между плитками*/
   /*Очищаем поток*/ }
+  /* line 321, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .boxes:after {
     content: "";
     display: table;
     clear: both;
     width: 100%; }
+  /* line 328, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .boxes .boxes__item {
     display: inline-block;
     /*Дочерний элемент делаем строчно блочным*/
@@ -489,12 +525,15 @@ img {
     /*Установливаю внутренний отступ у плиток*/
     margin-bottom: 20px;
     /*Нижний отступ*/ }
+  /* line 345, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .boxes .boxes__img {
     margin-bottom: 35px; }
+    /* line 348, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .boxes .boxes__img img {
       display: block;
       /*Делаю картинку блочным элементом*/
       width: 100%; }
+  /* line 355, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .boxes .boxes__text {
     text-align: center;
     color: #ffffff;
@@ -507,85 +546,91 @@ img {
 
 /*end services*/
 /*Block team*/
-.team {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* line 372, ../../Users/operator/Desktop/Medical/scss/style.scss */
+.container_center .team {
   display: flex;
   padding-bottom: 60px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap; }
-  .team__item {
+  /* line 378, ../../Users/operator/Desktop/Medical/scss/style.scss */
+  .container_center .team__block .team__item {
     position: relative;
     background: url(../img/aboutBagLight.png) no-repeat center;
     height: 234px;
     padding: 17px 8px 26px 15px;
-    -webkit-transition-property: background;
-    -o-transition-property: background;
     transition-property: background;
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
     transition-duration: 0.5s; }
-  .team__img {
+  /* line 387, ../../Users/operator/Desktop/Medical/scss/style.scss */
+  .container_center .team__block .team__img {
     width: 234px;
     height: 234px; }
-  .team__item:nth-child(1):before {
-    content: "";
-    border: solid transparent;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    border-top-color: #399ac6;
-    border-width: 13px;
-    margin-left: -13px; }
-  .team__item:nth-child(2):before {
-    content: "";
-    border: solid transparent;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    border-bottom-color: #399ac6;
-    border-width: 13px;
-    margin-left: -13px; }
-  .team__item:hover {
-    background: url(../img/aboutBagDark.png) no-repeat center;
-    -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s; }
-  .team__title {
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-  .team__text {
-    width: 195px;
-    height: 160px;
-    overflow: hidden;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px; }
+
+/* line 394, ../../Users/operator/Desktop/Medical/scss/style.scss */
+.container_center .team__item:nth-child(1):before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-top-color: #399ac6;
+  border-width: 13px;
+  margin-left: -13px; }
+
+/* line 405, ../../Users/operator/Desktop/Medical/scss/style.scss */
+.container_center .team__item:nth-child(2):before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-bottom-color: #399ac6;
+  border-width: 13px;
+  margin-left: -13px; }
+
+/* line 416, ../../Users/operator/Desktop/Medical/scss/style.scss */
+.container_center .team__item:hover {
+  background: url(../img/aboutBagDark.png) no-repeat center;
+  transition-duration: 0.5s; }
+
+/* line 421, ../../Users/operator/Desktop/Medical/scss/style.scss */
+.container_center .team__title {
+  color: #ffffff;
+  font-family: "ChaletComprime-CologneEighty";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+/* line 431, ../../Users/operator/Desktop/Medical/scss/style.scss */
+.container_center .team__text {
+  width: 195px;
+  height: 160px;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px; }
 
 /*end team*/
 /*Block contact-us*/
+/* line 447, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .contact-us {
   background: url("../img/contactUsBg.png") no-repeat center center;
   background-size: cover;
   padding: 120px 0px; }
+  /* line 452, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .contact-us__bg-img {
     background: url("../img/contactUsBgForm.png") no-repeat center center;
     background-size: cover;
     padding-top: 40px; }
+    /* line 459, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .contact-us__bg-img .contact-info {
       float: left;
       margin-left: 30px;
       margin-right: 110px;
       min-width: 500px; }
+      /* line 465, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-info__title {
         color: #ffffff;
         font-family: "ChaletComprime-CologneEighty";
@@ -594,54 +639,64 @@ img {
         text-transform: uppercase;
         padding-bottom: 20px;
         border-bottom: 1px solid #13849c;
-        -webkit-box-shadow: 0 1px #53cde5;
         box-shadow: 0 1px #53cde5;
         margin-bottom: 20px; }
+      /* line 477, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-info__list {
         list-style: none;
         display: grid;
         grid-template-columns: 30px auto; }
+      /* line 483, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-info .icon-contactUscalendar {
         font-size: 19px;
         margin-top: 10px;
         color: #fff; }
+      /* line 489, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-info .icon-contactUslocation {
         font-size: 22px;
         margin-right: 10px;
         margin-top: 10px;
         color: #fff; }
+      /* line 496, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-info .icon-contactUsphone {
         font-size: 22px;
         margin-right: 10px;
         margin-top: 10px;
         color: #fff; }
+      /* line 503, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-info .icon-contactUsfax {
         font-size: 22px;
         margin-right: 10px;
         margin-top: 10px;
         color: #fff; }
+      /* line 510, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-info .icon-contactUsemail {
         font-size: 19px;
         margin-right: 10px;
         margin-top: 10px;
         color: #fff; }
+      /* line 517, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-info__item {
         color: #ffffff;
         font-family: "Open Sans";
         font-weight: 200; }
+        /* line 522, ../../Users/operator/Desktop/Medical/scss/style.scss */
         .contact-us__bg-img .contact-info__item .email {
           font-family: "Open Sans";
           font-style: italic; }
+        /* line 527, ../../Users/operator/Desktop/Medical/scss/style.scss */
         .contact-us__bg-img .contact-info__item .caption {
           color: #ffffff;
           font-family: "Open Sans";
           font-size: 14px;
           font-weight: 700;
           line-height: 44px; }
+    /* line 537, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .contact-us__bg-img .contact-message {
       float: right;
       margin-right: 30px;
       max-width: 495px; }
+      /* line 542, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-message__title {
         color: #ffffff;
         font-family: "ChaletComprime-CologneEighty";
@@ -650,20 +705,24 @@ img {
         text-transform: uppercase;
         padding-bottom: 20px;
         border-bottom: 1px solid #13849c;
-        -webkit-box-shadow: 0 1px #53cde5;
         box-shadow: 0 1px #53cde5;
         margin-bottom: 20px; }
+      /* line 554, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .contact-us__bg-img .contact-message #form {
         margin-bottom: 100px; }
+        /* line 557, ../../Users/operator/Desktop/Medical/scss/style.scss */
         .contact-us__bg-img .contact-message #form fieldset {
           border: none; }
+        /* line 561, ../../Users/operator/Desktop/Medical/scss/style.scss */
         .contact-us__bg-img .contact-message #form .form__list {
           list-style: none; }
+          /* line 565, ../../Users/operator/Desktop/Medical/scss/style.scss */
           .contact-us__bg-img .contact-message #form .form__list .form__item label {
             display: block;
             padding-left: 20px;
             background: #ffffff;
             margin-bottom: 5px; }
+          /* line 572, ../../Users/operator/Desktop/Medical/scss/style.scss */
           .contact-us__bg-img .contact-message #form .form__list .form__item label span {
             display: inline-block;
             opacity: 0.8;
@@ -671,9 +730,11 @@ img {
             font-family: "Open Sans";
             font-size: 13px;
             font-weight: 400; }
+          /* line 581, ../../Users/operator/Desktop/Medical/scss/style.scss */
           .contact-us__bg-img .contact-message #form .form__list .form__item .mess {
             vertical-align: top;
             padding-top: 10px; }
+        /* line 588, ../../Users/operator/Desktop/Medical/scss/style.scss */
         .contact-us__bg-img .contact-message #form #name,
         .contact-us__bg-img .contact-message #form #email,
         .contact-us__bg-img .contact-message #form #phone,
@@ -682,9 +743,11 @@ img {
           padding: 13px;
           min-width: 410px;
           outline: none; }
+        /* line 598, ../../Users/operator/Desktop/Medical/scss/style.scss */
         .contact-us__bg-img .contact-message #form #message {
           padding-bottom: 113px;
           resize: none; }
+        /* line 603, ../../Users/operator/Desktop/Medical/scss/style.scss */
         .contact-us__bg-img .contact-message #form .btn_submit {
           float: right;
           color: #ffffff;
@@ -696,76 +759,61 @@ img {
           padding: 17px 61px;
           border: none;
           cursor: pointer;
-          -webkit-transition-property: color, background;
-          -o-transition-property: color, background;
           transition-property: color, background;
-          -webkit-transition-duration: 0.6s;
-          -o-transition-duration: 0.6s;
           transition-duration: 0.6s; }
+        /* line 618, ../../Users/operator/Desktop/Medical/scss/style.scss */
         .contact-us__bg-img .contact-message #form .btn_submit:hover {
           background: #ffffff;
           color: #000000;
-          -webkit-transition-duration: 0.6s;
-          -o-transition-duration: 0.6s;
           transition-duration: 0.6s; }
 
 /*end contactus*/
 /*Block footer*/
+/* line 632, ../../Users/operator/Desktop/Medical/scss/style.scss */
 .footer {
   padding-top: 26px;
   padding-bottom: 26px; }
+  /* line 636, ../../Users/operator/Desktop/Medical/scss/style.scss */
   .footer .container_center {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between; }
+    /* line 641, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .footer .container_center .footer__copyring {
       opacity: 0.5;
       color: #000000;
       font-family: "Open Sans";
       font-size: 12px;
       font-weight: 300; }
+    /* line 650, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .footer .container_center .footer__soc a {
       text-decoration: none; }
+      /* line 653, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .footer .container_center .footer__soc a .icon-facebook {
         font-size: 23px;
         color: #b1b1b1;
-        -webkit-transition-property: color;
-        -o-transition-property: color;
         transition-property: color;
-        -webkit-transition-duration: 0.6s;
-        -o-transition-duration: 0.6s;
         transition-duration: 0.6s; }
+      /* line 660, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .footer .container_center .footer__soc a .icon-twitter {
         font-size: 23px;
         color: #b1b1b1;
         margin: 0px 13px 0px 5px;
-        -webkit-transition-property: color;
-        -o-transition-property: color;
         transition-property: color;
-        -webkit-transition-duration: 0.6s;
-        -o-transition-duration: 0.6s;
         transition-duration: 0.6s; }
+      /* line 668, ../../Users/operator/Desktop/Medical/scss/style.scss */
       .footer .container_center .footer__soc a .icon-skype {
         font-size: 23px;
         color: #b1b1b1;
-        -webkit-transition-property: color;
-        -o-transition-property: color;
         transition-property: color;
-        -webkit-transition-duration: 0.6s;
-        -o-transition-duration: 0.6s;
         transition-duration: 0.6s; }
+    /* line 676, ../../Users/operator/Desktop/Medical/scss/style.scss */
     .footer .container_center .footer__soc .icon-facebook:hover,
     .footer .container_center .footer__soc .icon-twitter:hover,
     .footer .container_center .footer__soc .icon-skype:hover {
       color: #42b3e5;
-      -webkit-transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
       transition-duration: 0.6s; }
 
 /*end footer*/
+
+/*# sourceMappingURL=style.css.map */

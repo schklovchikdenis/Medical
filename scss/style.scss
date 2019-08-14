@@ -1,7 +1,7 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 @import "_mixin";
@@ -10,618 +10,675 @@
 @import "slick";
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 /*---------------*/
 /*Titles*/
 .title {
-  margin: 0px auto;
-  text-align: center;
-  font-family: "ChaletComprime-CologneEighty";
-  font-size: 90px;
-  font-weight: 400;
-  line-height: 90px;
-  color: #42b3e5;
-  margin-top: 50px;
-  text-transform: uppercase;
+	margin: 0px auto;
+	text-align: center;
+	font-family: "ChaletComprime-CologneEighty";
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 90px;
+	color: #42b3e5;
+	margin-top: 50px;
+	text-transform: uppercase;
 
-  &.title__contrast {
-    color: #ffffff;
-    padding: 0;
-  }
+	&.title__contrast {
+		color: #ffffff;
+		padding: 0;
+	}
 }
 
 /*Subtitles*/
 .subtitle {
-  margin: 0px auto;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #737373;
-  margin-bottom: 40px;
-  font-family: "ChaletComprime-CologneEighty";
+	margin: 0px auto;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #737373;
+	margin-bottom: 40px;
+	font-family: "ChaletComprime-CologneEighty";
 
-  &.subtitle__contrast {
-    color: #ffffff;
-  }
+	&.subtitle__contrast {
+		color: #ffffff;
+	}
 }
+
 /*--------------*/
 
 .container_center {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
 }
 
 /*header*/
 
-.container_center {
-  .header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    padding-top: 28px;
-    padding-bottom: 26px;
 
-    .headernav {
-      display: flex;
-      justify-content: flex-end;
-      &__item {
-        list-style: none;
-        margin-right: 50px;
-      }
-      &__item:last-child {
-        margin-right: 0;
-      }
-      &__item_link {
-        text-decoration: none;
-        color: #737373;
-        font-family: "ChaletComprime-CologneEighty";
-        font-size: 24px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.96px;
-        transition-property: color;
-        transition-duration: 0.3s;
-        &:hover {
-          color: #42b3e5;
-          cursor: pointer;
-          transition-duration: 0.3s;
-        }
-      }
-    }
-  }
+.header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	padding-top: 28px;
+	padding-bottom: 26px;
+
+	&-nav {
+		display: flex;
+		justify-content: flex-end;
+
+		&__item {
+			list-style: none;
+			margin-right: 50px;
+		}
+
+		&__item:last-child {
+			margin-right: 0;
+		}
+
+		&__link {
+			text-decoration: none;
+			color: #737373;
+			font-family: "ChaletComprime-CologneEighty";
+			font-size: 24px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 0.96px;
+			transition-property: color;
+			transition-duration: 0.3s;
+
+			&:hover {
+				color: #42b3e5;
+				cursor: pointer;
+				transition-duration: 0.3s;
+			}
+		}
+	}
 }
+
+
 /*end header*/
 
 /*block slider*/
 
-.providingSlider {
-  position: relative;
-  margin-bottom: 25px;
-  .providingSlider__item {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: bottom;
-  }
-  .container_center {
-    .providingSlider__text {
-      margin-top: 208px;
-      width: 439px;
-      height: 162px;
-    }
+.providing-slider {
+	position: relative;
+	margin-bottom: 25px;
 
-    .providingSlider__btn {
-      margin-top: 40px;
-      margin-bottom: 146px;
-      .providingSlider__btn_link {
-        color: #ffffff;
-        font-family: "ChaletComprime-CologneEighty";
-        font-size: 30px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        text-decoration: none;
-        padding: 18px 66px;
-        min-width: 240px;
-        background-image: url(../img/providingBtnBg.png);
-        background-repeat: no-repeat;
-        &:hover {
-          opacity: 0.6;
-        }
-      }
-    }
-  }
+	&__item {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position-y: bottom;
+	}
 
-  .slick-arrow {
-    // По умолчанию для slick слайдера кнопки переключения это тэги button
-    // Делаем сброс для стилей тэга button
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    cursor: pointer;
-    // Скрываем текст задавая размер шрифту 0
-    font-size: 0;
-    // Задаем размеры кнопок
-    width: 42px;
-    height: 42px;
-    // Позиционируем кнопки внутри слайдера
-    position: absolute;
-    // Сдвигем стрелки на половину высоты слайдера от верхнего края
-    top: 47%;
-    // Делаем обратный отступ на половину высоты кнопки чтобы кнопки не зависимо от высоты слайда всегда находились по центру
-    margin-top: 0px;
-    // Задаем номер слоя чтобы слайд не перекрывал кнопку с классом slick-prev
-    z-index: 10;
-  }
-  .slick-prev {
-    // Задаем фоновое изображение для кнопки назад
-    background-image: url(../img/providingArrowLef.svg);
-    // Сдвигаем кнопку в сторону от левого слайда если это необходимо по дизайну
-    left: 0.5%;
-    opacity: 0.3;
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-  .slick-next {
-    // Задаем фоновое изображение для кнопки вперед
-    background-image: url(../img/providingArrowRig.svg);
-    // Сдвигаем кнопку в сторону от правого слайда если это необходимо по дизайну
-    left: 96%;
-    opacity: 0.3;
-    &:hover {
-      opacity: 0.9;
-    }
-  }
+
+	&__text {
+		margin-top: 208px;
+		width: 439px;
+		height: 162px;
+	}
+
+	&__btn {
+		margin-top: 40px;
+		margin-bottom: 146px;
+	}
+
+	&__link {
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 13px 66px;
+		min-width: 240px;
+		background-image: url(../img/providingBtnBg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	.slick-arrow {
+		// По умолчанию для slick слайдера кнопки переключения это тэги button
+		// Делаем сброс для стилей тэга button
+		border: none;
+		outline: 0;
+		background-color: transparent;
+		cursor: pointer;
+		// Скрываем текст задавая размер шрифту 0
+		font-size: 0;
+		// Задаем размеры кнопок
+		width: 42px;
+		height: 42px;
+		// Позиционируем кнопки внутри слайдера
+		position: absolute;
+		// Сдвигем стрелки на половину высоты слайдера от верхнего края
+		top: 47%;
+		// Делаем обратный отступ на половину высоты кнопки чтобы кнопки не зависимо от высоты слайда всегда находились по центру
+		margin-top: 0px;
+		// Задаем номер слоя чтобы слайд не перекрывал кнопку с классом slick-prev
+		z-index: 10;
+	}
+
+	.slick-prev {
+		// Задаем фоновое изображение для кнопки назад
+		background-image: url(../img/providingArrowLef.svg);
+		// Сдвигаем кнопку в сторону от левого слайда если это необходимо по дизайну
+		left: 0.5%;
+		opacity: 0.3;
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+
+	.slick-next {
+		// Задаем фоновое изображение для кнопки вперед
+		background-image: url(../img/providingArrowRig.svg);
+		// Сдвигаем кнопку в сторону от правого слайда если это необходимо по дизайну
+		left: 96%;
+		opacity: 0.3;
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
 }
-/*end slide*/
+
+/*end slider*/
 
 /*Block aboutUs*/
 
-#about {
-  padding-bottom: 60px;
-  .about_list {
-    display: flex;
-    justify-content: space-between;
+.about {
+	padding-bottom: 60px;
 
-    .about_item {
-      width: 363px;
-      height: 503px;
-      background: url(../img/aboutBagDark.png) no-repeat center center;
-      transition-property: background;
-      transition-duration: 0.5s;
-      .about_img {
-        img {
-          border-bottom: 4px solid #fff;
-        }
-      }
-      .about_star {
-        text-align: center;
-        margin-top: -8%;
-        margin-bottom: 10%;
-      }
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
 
-      .star {
-        display: inline-block;
-        border:1px solid red;
-        width: 67px;
-        height: 60px;
-        background: #fff;
-        position: relative;
-       }
-      .star:before,
-      .star:after {
-        content: "";
-        width: 0;
-        height: 0;
-        position: absolute;
-        left: 0;
-        border-left: 34px solid transparent;
-        border-right: 34px solid transparent;
-      }
-      .star:before {
-        top: -17px;
-        border-bottom: 10px solid #fff;
-      }
-      .star:after {
-        bottom: -17px;
-        border-top: 10px solid #fff;
-      }
-      .star_text {
-        border: 1px solid green;
-        color: #272727;
-        font-family: "ChaletComprime-CologneEighty";
-        font-size: 60px;
-        font-weight: 400;
-        // line-height: 40px;
-        text-transform: uppercase;
-        // letter-spacing: 2.83px;
-        // text-align: center;
-        vertical-align: middle;
-        // margin-bottom: -30px;
-        transition-duration: 0.5s;
-      }
-    }
-    .about_item:hover {
-      transition-duration: 0.5s;
-      background: url(../img/aboutBagLight.png) no-repeat center center;
-      .star_text {
-        transition-duration: 0.5s;
-        color: #42b3e5;
-      }
-    }
-    .about_title {
-      text-align: center;
-      color: #ffffff;
-      font-family: "ChaletComprime-CologneEighty";
-      font-size: 36px;
-      font-weight: 400;
-      // line-height: 22px;
-      text-transform: uppercase;
-    }
-    .about_text {
-      text-align: center;
-      color: #ffffff;
-      font-family: "Open Sans";
-      font-size: 13px;
-      font-weight: 300;
-      // line-height: 20px;
-      padding: 10px 35px 0px 35px;
-    }
-  }
+	&__item {
+		width: 363px;
+		height: 503px;
+		background: url(../img/aboutBagDark.png) no-repeat center center;
+		transition-property: background;
+		transition-duration: 0.5s;
+
+
+		img {
+			border-bottom: 4px solid #fff;
+		}
+
+
+		.about__star {
+			text-align: center;
+			margin-top: -30px;
+			margin-bottom: 30px;
+		}
+
+		.star {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 67px;
+			height: 45px;
+			background: #fff;
+			position: relative;
+		}
+
+		.star:before,
+		.star:after {
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: 0;
+			border-left: 34px solid transparent;
+			border-right: 34px solid transparent;
+		}
+
+		.star:before {
+			top: -17px;
+			border-bottom: 16.5px solid #fff;
+		}
+
+		.star:after {
+			bottom: -17px;
+			border-top: 17px solid #fff;
+		}
+
+		.star__text {
+			color: #272727;
+			font-family: "ChaletComprime-CologneEighty";
+			font-size: 60px;
+			font-weight: 400;
+			text-transform: uppercase;
+			transition-duration: 0.5s;
+		}
+	}
+
+	&__item:hover {
+		transition-duration: 0.5s;
+		background: url(../img/aboutBagLight.png) no-repeat center center;
+
+		.star__text {
+			transition-duration: 0.5s;
+			color: #42b3e5;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 36px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		text-align: center;
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 13px;
+		font-weight: 300;
+		padding: 10px 35px 0px 35px;
+	}
+
 }
 
 /*end aboutUs*/
 
 /*Block services*/
-#services {
-  padding-top: 60px;
-  background-image: url(../img/aboutBagLight.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.services {
+	padding-top: 60px;
+	background-image: url(../img/aboutBagLight.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .boxes {
-  margin-top: 73px; /*Расстояние между плитками*/
-  font-size: 0; /*Сбрасываем высоту символов*/
-  letter-spacing: -1px; /**/
-  margin-left: -99px; /*Расстояние между плитками*/
+	margin-top: 73px;
+	/*Расстояние между плитками*/
+	font-size: 0;
+	/*Сбрасываем высоту символов*/
+	letter-spacing: -1px;
+	/**/
+	margin-left: -99px;
+	/*Расстояние между плитками*/
 
-  /*Делаю отрицательный внутренний отступ у родителя, равный отступу между плитками*/
-  /*Очищаем поток*/
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-    width: 100%;
-  }
+	/*Делаю отрицательный внутренний отступ у родителя, равный отступу между плитками*/
+	/*Очищаем поток*/
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+		width: 100%;
+	}
 
-  .boxes__item {
-    display: inline-block;
-    /*Дочерний элемент делаем строчно блочным*/
-    vertical-align: top;
-    /*Выравниваем по вертикали*/
-    font-size: initial;
-    /*Восстанавливаем размер шрифта*/
-    letter-spacing: initial; /**/
-    width: 25%; /*Устанавливаем ширину, в зависимости от количества плиток по горизонтали*/
-    padding-left: 99px; /*Установливаю внутренний отступ у плиток*/
-    margin-bottom: 20px; /*Нижний отступ*/
-  }
-  .boxes__img {
-    margin-bottom: 35px;
-    img {
-      display: block; /*Делаю картинку блочным элементом*/
-      width: 100%;
-    }
-  }
-  .boxes__text {
-    text-align: center;
-    color: #ffffff;
-    font-family: "";
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 108px;
-  }
+	.boxes__item {
+		display: inline-block;
+		/*Дочерний элемент делаем строчно блочным*/
+		vertical-align: top;
+		/*Выравниваем по вертикали*/
+		font-size: initial;
+		/*Восстанавливаем размер шрифта*/
+		letter-spacing: initial;
+		/**/
+		width: 25%;
+		/*Устанавливаем ширину, в зависимости от количества плиток по горизонтали*/
+		padding-left: 99px;
+		/*Установливаю внутренний отступ у плиток*/
+		margin-bottom: 20px;
+		/*Нижний отступ*/
+	}
+
+	.boxes__img {
+		margin-bottom: 35px;
+
+		img {
+			display: block;
+			/*Делаю картинку блочным элементом*/
+			width: 100%;
+		}
+	}
+
+	.boxes__text {
+		text-align: center;
+		color: #ffffff;
+		font-family: "";
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		margin-bottom: 108px;
+	}
 }
+
 /*end services*/
 
 /*Block team*/
-.container_center {
-  .team {
-    display: flex;
-    padding-bottom: 60px;
-    flex-flow: row wrap;
 
-    &__block {
-      width: 234px;
-      .team__item {
-        position: relative;
-        background: url(../img/aboutBagLight.png) no-repeat center;
-        height: 234px;
-        padding: 17px 8px 26px 15px;
-        transition-property: background;
-        transition-duration: 0.5s;
-      }
-    }
-  }
-  .team__item:nth-child(1):before {
-    content: "";
-    border: solid transparent;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    border-top-color: #399ac6;
-    border-width: 13px;
-    margin-left: -13px;
-  }
-  .team__item:nth-child(2):before {
-    content: "";
-    border: solid transparent;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    border-bottom-color: #399ac6;
-    border-width: 13px;
-    margin-left: -13px;
-  }
-  .team__item:hover {
-    background: url(../img/aboutBagDark.png) no-repeat center;
-    transition-duration: 0.5s;
-  }
 
-  .team__img {
-    width: 234px;
-    height: 234px;
-  }
-  .team__title {
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  .team__text {
-    width: 195px;
-    height: 160px;
-    overflow: hidden;
-    &_text {
-      color: #ffffff;
-      font-family: "Open Sans";
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 20px;
-    }
-  }
+.team {
+	display: flex;
+	padding-bottom: 60px;
+	flex-flow: row wrap;
+
+	&__item {
+		position: relative;
+		background: url(../img/aboutBagLight.png) no-repeat center;
+		height: 234px;
+		padding: 17px 8px 26px 15px;
+		transition-property: background;
+		transition-duration: 0.5s;
+	}
+
+	&__img {
+		width: 234px;
+		height: 234px;
+	}
+
+	&__item:nth-child(1):before {
+		content: "";
+		border: solid transparent;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		border-top-color: #399ac6;
+		border-width: 13px;
+		margin-left: -13px;
+	}
+
+	&__item:nth-child(2):before {
+		content: "";
+		border: solid transparent;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		border-bottom-color: #399ac6;
+		border-width: 13px;
+		margin-left: -13px;
+	}
+
+	&__item:hover {
+		background: url(../img/aboutBagDark.png) no-repeat center;
+		transition-duration: 0.5s;
+	}
+
+	&__title {
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		width: 195px;
+		height: 160px;
+		overflow: hidden;
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 20px;
+	}
 }
 
 /*end team*/
 
-/*Block contactus*/
-.contactUs {
-  background: url("../img/contactUsBg.png") no-repeat center center;
-  background-size: cover;
-  padding: 120px 0px;
-  &__bgImg {
-    background: url("../img/contactUsBgForm.png") no-repeat center center;
-    background-size: cover;
-    padding-top: 40px;
-    .title {
-      &.title__contactUs {
-        color: #ffffff;
-        margin-bottom: 20px;
-      }
-    }
-    @extend %clear_a;
-    .contactInf {
-      float: left;
-      margin-left: 30px;
-      margin-right: 110px;
-      min-width: 500px;
-      .contactInf__title {
-        color: #ffffff;
-        font-family: "ChaletComprime-CologneEighty";
-        font-size: 30px;
-        font-weight: 400;
-        text-transform: uppercase;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #13849c;
-        box-shadow: 0 1px #53cde5;
-        margin-bottom: 20px;
-      }
+/*Block contact-us*/
 
-      .contactInf__list {
-        list-style: none;
-        display: grid;
-        grid-template-columns: 30px auto;
-      }
-      .icon-contactUscalendar {
-        font-size: 19px;
-        margin-top: 10px;
-        color: #fff;
-      }
-      .icon-contactUslocation {
-        font-size: 22px;
-        margin-right: 10px;
-        margin-top: 10px;
-        color: #fff;
-      }
-      .icon-contactUsphone {
-        font-size: 22px;
-        margin-right: 10px;
-        margin-top: 10px;
-        color: #fff;
-      }
-      .icon-contactUsfax {
-        font-size: 22px;
-        margin-right: 10px;
-        margin-top: 10px;
-        color: #fff;
-      }
-      .icon-contactUsemail {
-        font-size: 19px;
-        margin-right: 10px;
-        margin-top: 10px;
-        color: #fff;
-      }
-      .contactInf__item {
-        color: #ffffff;
-        font-family: "Open Sans";
-        font-weight: 200;
-        .email {
-          font-family: "Open Sans";
-          font-style: italic;
-        }
-        .caption {
-          color: #ffffff;
-          font-family: "Open Sans";
-          font-size: 14px;
-          font-weight: 700;
-          line-height: 44px;
-        }
-      }
-    }
-    .contactMessag {
-      float: right;
-      margin-right: 30px;
-      max-width: 495px;
-      .contactMessag__title {
-        color: #ffffff;
-        font-family: "ChaletComprime-CologneEighty";
-        font-size: 30px;
-        font-weight: 400;
-        text-transform: uppercase;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #13849c;
-        box-shadow: 0 1px #53cde5;
-        margin-bottom: 20px;
-      }
-      #form {
-        margin-bottom: 100px;
-        fieldset {
-          border: none;
-        }
-        .form__item {
-          list-style: none;
-          .form__item_list {
-            label {
-              display: block;
-              padding-left: 20px;
-              background: #ffffff;
-              margin-bottom: 5px;
-            }
-            label span {
-              display: inline-block;
-              opacity: 0.8;
-              color: #084a5c;
-              font-family: "Open Sans";
-              font-size: 13px;
-              font-weight: 400;
-            }
-            .mess {
-              vertical-align: top;
-              padding-top: 10px;
-            }
-          }
-        }
+.contact-us {
+	background: url("../img/contactUsBg.png") no-repeat center center;
+	background-size: cover;
+	padding: 120px 0px;
 
-        #name,
-        #email,
-        #phone,
-        #message {
-          border-style: none;
-          padding: 13px;
-          min-width: 410px;
-          outline: none;
-        }
-        #message {
-          padding-bottom: 113px;
-          resize: none;
-        }
+	&__bg-img {
+		background: url("../img/contactUsBgForm.png") no-repeat center center;
+		background-size: cover;
+		padding-top: 40px;
 
-        .btn_submit {
-          float: right;
-          color: #ffffff;
-          font-family: "ChaletComprime-HongKongEighty";
-          font-size: 24px;
-          font-weight: 400;
-          text-transform: uppercase;
-          background: url(../img/bg_btn.png) center center;
-          padding: 17px 61px;
-          border: none;
-          cursor: pointer;
-          transition-property: color, background;
-          transition-duration: 0.6s;
-        }
-        .btn_submit:hover {
-          background: #ffffff;
-          color: #000000;
-          transition-duration: 0.6s;
-        }
-      }
-    }
-  }
+		@extend %clear_a;
+
+		.contact-info {
+			float: left;
+			margin-left: 30px;
+			margin-right: 110px;
+			min-width: 500px;
+
+			&__title {
+				color: #ffffff;
+				font-family: "ChaletComprime-CologneEighty";
+				font-size: 30px;
+				font-weight: 400;
+				text-transform: uppercase;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #13849c;
+				box-shadow: 0 1px #53cde5;
+				margin-bottom: 20px;
+			}
+
+			&__list {
+				list-style: none;
+				display: grid;
+				grid-template-columns: 30px auto;
+			}
+
+			.icon-contactUscalendar {
+				font-size: 19px;
+				margin-top: 10px;
+				color: #fff;
+			}
+
+			.icon-contactUslocation {
+				font-size: 22px;
+				margin-right: 10px;
+				margin-top: 10px;
+				color: #fff;
+			}
+
+			.icon-contactUsphone {
+				font-size: 22px;
+				margin-right: 10px;
+				margin-top: 10px;
+				color: #fff;
+			}
+
+			.icon-contactUsfax {
+				font-size: 22px;
+				margin-right: 10px;
+				margin-top: 10px;
+				color: #fff;
+			}
+
+			.icon-contactUsemail {
+				font-size: 19px;
+				margin-right: 10px;
+				margin-top: 10px;
+				color: #fff;
+			}
+
+			&__item {
+				color: #ffffff;
+				font-family: "Open Sans";
+				font-weight: 200;
+
+				.email {
+					font-family: "Open Sans";
+					font-style: italic;
+				}
+
+				.caption {
+					color: #ffffff;
+					font-family: "Open Sans";
+					font-size: 14px;
+					font-weight: 700;
+					line-height: 44px;
+				}
+			}
+		}
+
+		.contact-message {
+			float: right;
+			margin-right: 30px;
+			max-width: 495px;
+
+			&__title {
+				color: #ffffff;
+				font-family: "ChaletComprime-CologneEighty";
+				font-size: 30px;
+				font-weight: 400;
+				text-transform: uppercase;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #13849c;
+				box-shadow: 0 1px #53cde5;
+				margin-bottom: 20px;
+			}
+
+			#form {
+				margin-bottom: 100px;
+
+				fieldset {
+					border: none;
+				}
+
+				.form__list {
+					list-style: none;
+
+					.form__item {
+						label {
+							display: block;
+							padding-left: 20px;
+							background: #ffffff;
+							margin-bottom: 5px;
+						}
+
+						label span {
+							display: inline-block;
+							opacity: 0.8;
+							color: #084a5c;
+							font-family: "Open Sans";
+							font-size: 13px;
+							font-weight: 400;
+						}
+
+						.mess {
+							vertical-align: top;
+							padding-top: 10px;
+						}
+					}
+				}
+
+				#name,
+				#email,
+				#phone,
+				#message {
+					border-style: none;
+					padding: 13px;
+					min-width: 410px;
+					outline: none;
+				}
+
+				#message {
+					padding-bottom: 113px;
+					resize: none;
+				}
+
+				.btn_submit {
+					float: right;
+					color: #ffffff;
+					font-family: "ChaletComprime-HongKongEighty";
+					font-size: 24px;
+					font-weight: 400;
+					text-transform: uppercase;
+					background: url(../img/bg_btn.png) center center;
+					padding: 17px 61px;
+					border: none;
+					cursor: pointer;
+					transition-property: color, background;
+					transition-duration: 0.6s;
+				}
+
+				.btn_submit:hover {
+					background: #ffffff;
+					color: #000000;
+					transition-duration: 0.6s;
+				}
+			}
+		}
+	}
 }
+
 /*end contactus*/
 
 /*Block footer*/
 
 .footer {
-  padding-top: 26px;
-  padding-bottom: 26px;
+	padding-top: 26px;
+	padding-bottom: 26px;
 
-  .container_center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .footer__copyring {
-      opacity: 0.5;
-      color: #000000;
-      font-family: "Open Sans";
-      font-size: 12px;
-      font-weight: 300;
-    }
-    .footer__soc {
-      a {
-        text-decoration: none;
+	.container_center {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-        .icon-facebook {
-          font-size: 23px;
-          color: #b1b1b1;
-          transition-property: color;
-          transition-duration: 0.6s;
-        }
-        .icon-twitter {
-          font-size: 23px;
-          color: #b1b1b1;
-          margin: 0px 13px 0px 5px;
-          transition-property: color;
-          transition-duration: 0.6s;
-        }
-        .icon-skype {
-          font-size: 23px;
-          color: #b1b1b1;
-          transition-property: color;
-          transition-duration: 0.6s;
-        }
-      }
-      .icon-facebook:hover,
-      .icon-twitter:hover,
-      .icon-skype:hover {
-        color: #42b3e5;
-        transition-duration: 0.6s;
-      }
-    }
-  }
+		.footer__copyring {
+			opacity: 0.5;
+			color: #000000;
+			font-family: "Open Sans";
+			font-size: 12px;
+			font-weight: 300;
+		}
+
+		.footer__soc {
+			a {
+				text-decoration: none;
+
+				.icon-facebook {
+					font-size: 23px;
+					color: #b1b1b1;
+					transition-property: color;
+					transition-duration: 0.6s;
+				}
+
+				.icon-twitter {
+					font-size: 23px;
+					color: #b1b1b1;
+					margin: 0px 13px 0px 5px;
+					transition-property: color;
+					transition-duration: 0.6s;
+				}
+
+				.icon-skype {
+					font-size: 23px;
+					color: #b1b1b1;
+					transition-property: color;
+					transition-duration: 0.6s;
+				}
+			}
+
+			.icon-facebook:hover,
+			.icon-twitter:hover,
+			.icon-skype:hover {
+				color: #42b3e5;
+				transition-duration: 0.6s;
+			}
+		}
+	}
 }
+
 /*end footer*/
