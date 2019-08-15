@@ -411,10 +411,10 @@ img {
       border-right: 34px solid transparent; }
     .about__item .star:before {
       top: -17px;
-      border-bottom: 17px solid #fff; }
+      border-bottom: 17.2px solid #fff; }
     .about__item .star:after {
       bottom: -17px;
-      border-top: 17px solid #fff; }
+      border-top: 17.2px solid #fff; }
     .about__item .star__text {
       color: #272727;
       font-family: "ChaletComprime-CologneEighty";
