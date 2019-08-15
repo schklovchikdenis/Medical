@@ -227,9 +227,9 @@ img {
 		.star {
 			display: inline-flex;
 			justify-content: center;
-			align-items: center;
-			width: 67px;
-			height: 45px;
+			align-items: stretch;
+			width: 69px;
+			height: 47px;
 			background: #fff;
 			position: relative;
 		}
@@ -247,7 +247,7 @@ img {
 
 		.star:before {
 			top: -17px;
-			border-bottom: 16.5px solid #fff;
+			border-bottom: 17px solid #fff;
 		}
 
 		.star:after {
@@ -256,6 +256,7 @@ img {
 		}
 
 		.star__text {
+			// border: 1px solid red;
 			color: #272727;
 			font-family: "ChaletComprime-CologneEighty";
 			font-size: 60px;

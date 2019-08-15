@@ -393,11 +393,11 @@ img {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 67px;
-      height: 45px;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      width: 69px;
+      height: 47px;
       background: #fff;
       position: relative; }
     .about__item .star:before,
@@ -411,7 +411,7 @@ img {
       border-right: 34px solid transparent; }
     .about__item .star:before {
       top: -17px;
-      border-bottom: 16.5px solid #fff; }
+      border-bottom: 17px solid #fff; }
     .about__item .star:after {
       bottom: -17px;
       border-top: 17px solid #fff; }
