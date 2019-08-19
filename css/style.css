@@ -373,7 +373,7 @@ img {
     justify-content: space-between; }
   .about__item {
     width: 363px;
-    height: 503px;
+    padding-bottom: 27px;
     background: url(../img/aboutBagDark.png) no-repeat center center;
     -webkit-transition-property: background;
     -o-transition-property: background;
@@ -436,6 +436,7 @@ img {
       transition-duration: 0.5s;
       color: #42b3e5; }
   .about__title {
+    padding-top: 5px;
     text-align: center;
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
