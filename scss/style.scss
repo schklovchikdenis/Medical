@@ -340,7 +340,7 @@ img {
     width: 100%;
   }
 
-  .boxes__item {
+  &__item {
     display: inline-block;
     /*Дочерний элемент делаем строчно блочным*/
     vertical-align: top;
@@ -357,7 +357,7 @@ img {
     /*Нижний отступ*/
   }
 
-  .boxes__img {
+  &__img {
     margin-bottom: 35px;
 
     img {
@@ -367,11 +367,11 @@ img {
     }
   }
 
-  .boxes__text {
+  &__text {
     text-align: center;
     color: #ffffff;
-    font-family: "";
-    font-size: 17px;
+    font-family: "ChaletComprime-CologneEighty";
+    font-size: 30px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;

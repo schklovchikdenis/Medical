@@ -490,7 +490,7 @@ img {
     display: table;
     clear: both;
     width: 100%; }
-  .boxes .boxes__item {
+  .boxes__item {
     display: inline-block;
     /*Дочерний элемент делаем строчно блочным*/
     vertical-align: top;
@@ -505,17 +505,17 @@ img {
     /*Установливаю внутренний отступ у плиток*/
     margin-bottom: 20px;
     /*Нижний отступ*/ }
-  .boxes .boxes__img {
+  .boxes__img {
     margin-bottom: 35px; }
-    .boxes .boxes__img img {
+    .boxes__img img {
       display: block;
       /*Делаю картинку блочным элементом*/
       width: 100%; }
-  .boxes .boxes__text {
+  .boxes__text {
     text-align: center;
     color: #ffffff;
-    font-family: "";
-    font-size: 17px;
+    font-family: "ChaletComprime-CologneEighty";
+    font-size: 30px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
