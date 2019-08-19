@@ -313,9 +313,9 @@ img {
   .providing-slider__item {
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: -120px;
-    max-height: 700px; }
+    background-position-y: -120px; }
   .providing-slider__title {
+    line-height: 1%;
     display: inline-block;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     color: #ffffff;
@@ -323,8 +323,8 @@ img {
     font-size: 157px;
     font-weight: 400;
     text-transform: uppercase;
-    margin-top: 195px;
-    margin-bottom: -23px; }
+    margin-top: 270px;
+    margin-bottom: 50px; }
   .providing-slider__text {
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     color: #ffffff;
