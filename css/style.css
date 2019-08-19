@@ -313,13 +313,27 @@ img {
   .providing-slider__item {
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: bottom; }
+    background-position-y: -120px;
+    max-height: 700px; }
+  .providing-slider__title {
+    display: inline-block;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: "ChaletComprime-CologneEighty";
+    font-size: 157px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 195px;
+    margin-bottom: -23px; }
   .providing-slider__text {
-    margin-top: 208px;
-    width: 439px;
-    height: 162px; }
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: "ChaletComprime-CologneEighty";
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase; }
   .providing-slider__btn {
-    margin-top: 40px;
+    margin-top: 16px;
     margin-bottom: 146px; }
   .providing-slider__link {
     color: #ffffff;
@@ -344,7 +358,7 @@ img {
     width: 42px;
     height: 42px;
     position: absolute;
-    top: 47%;
+    top: 49%;
     margin-top: 0px;
     z-index: 10; }
   .providing-slider .slick-prev {

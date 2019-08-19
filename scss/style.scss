@@ -111,21 +111,37 @@ img {
 .providing-slider {
   position: relative;
   margin-bottom: 25px;
+    
 
   &__item {
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: bottom;
+    background-position-y: -120px;
+    max-height: 700px;
   }
 
+  &__title{
+    display: inline-block;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: "ChaletComprime-CologneEighty";
+    font-size: 157px;
+    font-weight: 400;
+    text-transform: uppercase;    
+    margin-top: 195px;
+     margin-bottom: -23px;  
+  }
   &__text {
-    margin-top: 208px;
-    width: 439px;
-    height: 162px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: "ChaletComprime-CologneEighty";
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 
   &__btn {
-    margin-top: 40px;
+    margin-top: 16px;
     margin-bottom: 146px;
   }
 
@@ -162,7 +178,7 @@ img {
     // Позиционируем кнопки внутри слайдера
     position: absolute;
     // Сдвигем стрелки на половину высоты слайдера от верхнего края
-    top: 47%;
+    top: 49%;
     // Делаем обратный отступ на половину высоты кнопки чтобы кнопки не зависимо от высоты слайда всегда находились по центру
     margin-top: 0px;
     // Задаем номер слоя чтобы слайд не перекрывал кнопку с классом slick-prev
@@ -199,7 +215,7 @@ img {
 /*Block aboutUs*/
 
 .about {
-  padding-bottom: 60px;  
+  padding-bottom: 60px;
   &__list {
     display: flex;
     justify-content: space-between;
