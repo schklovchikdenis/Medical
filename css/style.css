@@ -597,6 +597,8 @@ img {
     background: url("../img/contactUsBgForm.png") no-repeat center center;
     background-size: cover;
     padding-top: 40px; }
+  .contact-us .container_center {
+    border: 1px solid #ec0404; }
 
 .contact-info {
   float: left;
@@ -666,7 +668,7 @@ img {
 .contact-message {
   float: right;
   margin-right: 30px;
-  max-width: 495px; }
+  max-width: 500px; }
   .contact-message__title {
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
@@ -740,6 +742,25 @@ label {
   -webkit-transition-duration: 0.6s;
   -o-transition-duration: 0.6s;
   transition-duration: 0.6s; }
+
+@media (max-width: 1199px) {
+  .contact-info {
+    border: 1px solid #d80c0c;
+    float: none;
+    max-width: 500px;
+    margin: 0 auto; }
+    .contact-info__title {
+      text-align: center; }
+  .contact-message {
+    border: 1px solid #054b10;
+    float: none;
+    margin: 0 auto; }
+    .contact-message .btn_submit {
+      border: 1px solid #0a552c;
+      display: block;
+      float: none;
+      margin: 0 auto;
+      margin-top: 40px; } }
 
 /*end contactus*/
 /*Block footer*/
