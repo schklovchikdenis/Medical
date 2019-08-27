@@ -189,7 +189,7 @@ img {
     // Задаем фоновое изображение для кнопки назад
     background-image: url(../img/providingArrowLef.svg);
     // Сдвигаем кнопку в сторону от левого слайда если это необходимо по дизайну
-    left: 0.5%;
+    left: 2.5%;
     opacity: 0.3;
 
     &:hover {
@@ -201,7 +201,7 @@ img {
     // Задаем фоновое изображение для кнопки вперед
     background-image: url(../img/providingArrowRig.svg);
     // Сдвигаем кнопку в сторону от правого слайда если это необходимо по дизайну
-    left: 96%;
+    left: 93.5%;
     opacity: 0.3;
 
     &:hover {
@@ -209,7 +209,27 @@ img {
     }
   }
 }
-
+@media (max-width: 1199px) {
+  .slick-next {
+    // display: none;
+  }
+  .slick-prev {
+    // display: none;
+  }
+  .providing-slider{
+    &__item{
+      text-align: center;
+    }
+    &__title{
+          margin-top: 420px;
+          font-size: 120px;
+    }
+    &__btn{
+      margin-bottom: 0;
+      padding-bottom: 20px;
+    }
+  }
+}
 /*end slider*/
 
 /*Block aboutUs*/
@@ -597,7 +617,6 @@ label {
   }
 }
 
-
 .mess {
   vertical-align: top;
   padding-top: 10px;
@@ -644,23 +663,18 @@ label {
     border: 1px solid rgb(216, 12, 12);
     float: none;
     max-width: 500px;
-    // display: block;
     margin: 0 auto;
 
-    &__title{
+    &__title {
       text-align: center;
     }
-    
   }
   .contact-message {
     border: 1px solid rgb(5, 75, 16);
     float: none;
-    // display: block;
-    // max-width: 900px;
-    // max-height: 500px;
     margin: 0 auto;
 
-    .btn_submit{
+    .btn_submit {
       border: 1px solid rgb(10, 85, 44);
       display: block;
       float: none;

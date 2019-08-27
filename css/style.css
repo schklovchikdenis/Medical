@@ -363,16 +363,26 @@ img {
     z-index: 10; }
   .providing-slider .slick-prev {
     background-image: url(../img/providingArrowLef.svg);
-    left: 0.5%;
+    left: 2.5%;
     opacity: 0.3; }
     .providing-slider .slick-prev:hover {
       opacity: 0.9; }
   .providing-slider .slick-next {
     background-image: url(../img/providingArrowRig.svg);
-    left: 96%;
+    left: 93.5%;
     opacity: 0.3; }
     .providing-slider .slick-next:hover {
       opacity: 0.9; }
+
+@media (max-width: 1199px) {
+  .providing-slider__item {
+    text-align: center; }
+  .providing-slider__title {
+    margin-top: 420px;
+    font-size: 120px; }
+  .providing-slider__btn {
+    margin-bottom: 0;
+    padding-bottom: 20px; } }
 
 /*end slider*/
 /*Block aboutUs*/
