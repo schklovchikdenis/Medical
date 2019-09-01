@@ -378,23 +378,28 @@ img {
 
 @media (max-width: 1350px) {
   .providing-slider__item {
-    text-align: center; }
-  .providing-slider__title {
-    margin-top: 420px;
-    font-size: 157px; }
-  .providing-slider__btn {
-    margin-bottom: 0;
-    padding-bottom: 20px; } }
+    text-align: center; } }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .providing-slider__item {
     text-align: center; }
   .providing-slider__title {
-    margin-top: 420px;
-    font-size: 120px; }
+    letter-spacing: 10px;
+    font-size: 200px;
+    margin-top: 210px; }
+  .providing-slider__text {
+    margin-top: 20px;
+    font-size: 50px;
+    letter-spacing: 3px; }
   .providing-slider__btn {
-    margin-bottom: 0;
-    padding-bottom: 20px; } }
+    padding-top: 50px;
+    margin-bottom: 70px; }
+  .providing-slider__link {
+    font-size: 61px;
+    letter-spacing: 5px;
+    padding: 20px 100px 20px; }
+  .slick-arrow {
+    display: none; } }
 
 /*end slider*/
 /*Block aboutUs*/
