@@ -224,28 +224,6 @@ img {
 }
 @media (max-width: 767px) {
   .providing-slider {
-    &__item {
-      text-align: center;
-    }
-    &__title {
-      letter-spacing: 10px;
-      font-size: 200px;
-      margin-top: 210px;
-    }
-    &__text {
-      margin-top: 20px;
-      font-size: 50px;
-      letter-spacing: 3px;
-    }
-    &__btn {
-      padding-top: 50px;
-      margin-bottom: 70px;
-    }
-    &__link {
-      font-size: 61px;
-      letter-spacing: 5px;
-      padding: 20px 100px 20px;
-    }
   }
   .slick-arrow {
     display: none;
@@ -509,16 +487,15 @@ img {
     padding-top: 40px;
     @extend %clear_a;
   }
-  .container_center {
-    border: 1px solid rgb(236, 4, 4);
-  }
 }
 
 .contact-info {
-  float: left;
-  margin-left: 30px;
-  margin-right: 110px;
-  min-width: 500px;
+  border: 1px solid red;
+  display: block;
+  // float: left;
+  // margin-left: 30px;
+  // margin-right: 110px;
+  // max-width: 500px;
 
   &__title {
     color: #ffffff;
@@ -593,9 +570,11 @@ img {
 }
 
 .contact-message {
-  float: right;
-  margin-right: 30px;
-  max-width: 500px;
+  display: block;
+  border: 1px solid green;
+  // float: right;
+  // margin-right: 30px;
+  // max-width: 500px;
 
   &__title {
     color: #ffffff;
@@ -659,7 +638,7 @@ label {
 }
 
 .btn_submit {
-  float: right;
+  // float: right;
   color: #ffffff;
   font-family: "ChaletComprime-HongKongEighty";
   font-size: 24px;
@@ -680,29 +659,7 @@ label {
 }
 
 @media (max-width: 1199px) {
-  .contact-info {
-    border: 1px solid rgb(216, 12, 12);
-    float: none;
-    max-width: 500px;
-    margin: 0 auto;
-
-    &__title {
-      text-align: center;
-    }
-  }
-  .contact-message {
-    border: 1px solid rgb(5, 75, 16);
-    float: none;
-    margin: 0 auto;
-
-    .btn_submit {
-      border: 1px solid rgb(10, 85, 44);
-      display: block;
-      float: none;
-      margin: 0 auto;
-      margin-top: 40px;
-    }
-  }
+  
 }
 
 @media (max-width: 991px) {
@@ -769,54 +726,6 @@ label {
   }
 
   @media (max-width: 1199px) {
-  }
-
-  @media (max-width: 991px) {
-    .icon-facebook {
-      font-size: 30px;
-      color: #b1b1b1;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
-
-    .icon-twitter {
-      font-size: 30px;
-      color: #b1b1b1;
-      margin: 0px 13px 0px 5px;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
-
-    .icon-skype {
-      font-size: 30px;
-      color: #b1b1b1;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .icon-facebook {
-      font-size: 40px;
-      color: #b1b1b1;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
-
-    .icon-twitter {
-      font-size: 40px;
-      color: #b1b1b1;
-      margin: 0px 13px 0px 5px;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
-
-    .icon-skype {
-      font-size: 40px;
-      color: #b1b1b1;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
   }
 }
 

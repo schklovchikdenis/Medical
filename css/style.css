@@ -381,23 +381,6 @@ img {
     text-align: center; } }
 
 @media (max-width: 767px) {
-  .providing-slider__item {
-    text-align: center; }
-  .providing-slider__title {
-    letter-spacing: 10px;
-    font-size: 200px;
-    margin-top: 210px; }
-  .providing-slider__text {
-    margin-top: 20px;
-    font-size: 50px;
-    letter-spacing: 3px; }
-  .providing-slider__btn {
-    padding-top: 50px;
-    margin-bottom: 70px; }
-  .providing-slider__link {
-    font-size: 61px;
-    letter-spacing: 5px;
-    padding: 20px 100px 20px; }
   .slick-arrow {
     display: none; } }
 
@@ -624,14 +607,10 @@ img {
     background: url("../img/contactUsBgForm.png") no-repeat center center;
     background-size: cover;
     padding-top: 40px; }
-  .contact-us .container_center {
-    border: 1px solid #ec0404; }
 
 .contact-info {
-  float: left;
-  margin-left: 30px;
-  margin-right: 110px;
-  min-width: 500px; }
+  border: 1px solid red;
+  display: block; }
   .contact-info__title {
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
@@ -695,9 +674,8 @@ img {
   line-height: 44px; }
 
 .contact-message {
-  float: right;
-  margin-right: 30px;
-  max-width: 500px; }
+  display: block;
+  border: 1px solid green; }
   .contact-message__title {
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
@@ -748,7 +726,6 @@ label {
   resize: none; }
 
 .btn_submit {
-  float: right;
   color: #ffffff;
   font-family: "ChaletComprime-HongKongEighty";
   font-size: 24px;
@@ -771,25 +748,6 @@ label {
   -webkit-transition-duration: 0.6s;
   -o-transition-duration: 0.6s;
   transition-duration: 0.6s; }
-
-@media (max-width: 1199px) {
-  .contact-info {
-    border: 1px solid #d80c0c;
-    float: none;
-    max-width: 500px;
-    margin: 0 auto; }
-    .contact-info__title {
-      text-align: center; }
-  .contact-message {
-    border: 1px solid #054b10;
-    float: none;
-    margin: 0 auto; }
-    .contact-message .btn_submit {
-      border: 1px solid #0a552c;
-      display: block;
-      float: none;
-      margin: 0 auto;
-      margin-top: 40px; } }
 
 /*end contactus*/
 /*Block footer*/
@@ -849,63 +807,5 @@ label {
     -webkit-transition-duration: 0.6s;
     -o-transition-duration: 0.6s;
     transition-duration: 0.6s; }
-  @media (max-width: 991px) {
-    .footer .icon-facebook {
-      font-size: 30px;
-      color: #b1b1b1;
-      -webkit-transition-property: color;
-      -o-transition-property: color;
-      transition-property: color;
-      -webkit-transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
-      transition-duration: 0.6s; }
-    .footer .icon-twitter {
-      font-size: 30px;
-      color: #b1b1b1;
-      margin: 0px 13px 0px 5px;
-      -webkit-transition-property: color;
-      -o-transition-property: color;
-      transition-property: color;
-      -webkit-transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
-      transition-duration: 0.6s; }
-    .footer .icon-skype {
-      font-size: 30px;
-      color: #b1b1b1;
-      -webkit-transition-property: color;
-      -o-transition-property: color;
-      transition-property: color;
-      -webkit-transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
-      transition-duration: 0.6s; } }
-  @media (max-width: 767px) {
-    .footer .icon-facebook {
-      font-size: 40px;
-      color: #b1b1b1;
-      -webkit-transition-property: color;
-      -o-transition-property: color;
-      transition-property: color;
-      -webkit-transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
-      transition-duration: 0.6s; }
-    .footer .icon-twitter {
-      font-size: 40px;
-      color: #b1b1b1;
-      margin: 0px 13px 0px 5px;
-      -webkit-transition-property: color;
-      -o-transition-property: color;
-      transition-property: color;
-      -webkit-transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
-      transition-duration: 0.6s; }
-    .footer .icon-skype {
-      font-size: 40px;
-      color: #b1b1b1;
-      -webkit-transition-property: color;
-      -o-transition-property: color;
-      transition-property: color;
-      -webkit-transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
-      transition-duration: 0.6s; } }
 
 /*end footer*/
