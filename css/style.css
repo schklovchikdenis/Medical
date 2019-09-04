@@ -305,7 +305,7 @@ img {
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .header-nav {
     display: none; }
   .header .container_center {

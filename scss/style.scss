@@ -110,10 +110,7 @@ img {
 }
 
 @media (max-width: 991px) {
-}
-
-@media (max-width: 767px) {
-  .header {
+	.header {
     &-nav {
       display: none;
     }
@@ -124,6 +121,10 @@ img {
       margin: 0 auto;
     }
   }
+}
+
+@media (max-width: 767px) {
+  
 }
 
 /*end header*/
