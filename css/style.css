@@ -3,8 +3,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid #f00 !important; }
+  box-sizing: border-box; }
 
 .contact-us__bg-img:after {
   content: '';
@@ -265,9 +264,7 @@ img {
 
 /*header*/
 .header .container_center {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -312,7 +309,6 @@ img {
   .header-nav {
     display: none; }
   .header .container_center {
-    -ms-grid-columns: auto;
     grid-template-columns: auto; }
   .header .logo {
     margin: 0 auto; } }
@@ -595,8 +591,10 @@ img {
   padding-bottom: 60px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
+  -ms-flex-flow: row;
+  flex-flow: row; }
+  .team__block {
+    max-width: 234px; }
   .team__item {
     position: relative;
     background: url(../img/aboutBagLight.png) no-repeat center;
@@ -652,6 +650,19 @@ img {
     font-weight: 400;
     line-height: 20px; }
 
+@media (max-width: 767px) {
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .team__block {
+      max-width: 300px;
+      margin-bottom: 10px; } }
+
 /*end team*/
 /*Block contact-us*/
 .contact-us {
@@ -679,9 +690,7 @@ img {
     margin-bottom: 20px; }
   .contact-info__list {
     list-style: none;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 30px auto;
     grid-template-columns: 30px auto; }
   .contact-info__item {
     color: #ffffff;
