@@ -3,7 +3,8 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid #f00 !important; }
 
 .contact-us__bg-img:after {
   content: '';
@@ -307,6 +308,15 @@ img {
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
 
+@media (max-width: 767px) {
+  .header-nav {
+    display: none; }
+  .header .container_center {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto; }
+  .header .logo {
+    margin: 0 auto; } }
+
 /*end header*/
 /*block slider*/
 .providing-slider {
@@ -318,7 +328,7 @@ img {
     background-position-y: -120px; }
   .providing-slider__title {
     line-height: 1%;
-    display: inline-block;
+    display: block;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
@@ -344,7 +354,7 @@ img {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 13px 66px 6px;
+    padding: 10px 66px 10px;
     min-width: 240px;
     background-image: url(../img/providingBtnBg.png);
     background-repeat: no-repeat;
@@ -371,7 +381,7 @@ img {
       opacity: 0.9; }
   .providing-slider .slick-next {
     background-image: url(../img/providingArrowRig.svg);
-    left: 93.5%;
+    left: 94.5%;
     opacity: 0.3; }
     .providing-slider .slick-next:hover {
       opacity: 0.9; }
@@ -381,7 +391,8 @@ img {
     text-align: center; } }
 
 @media (max-width: 767px) {
-  .slick-arrow {
+  .providing-slider .slick-prev,
+  .providing-slider .slick-next {
     display: none; } }
 
 /*end slider*/
@@ -396,9 +407,10 @@ img {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .about__item {
-    width: 363px;
+    max-width: 363px;
     padding-bottom: 27px;
     background: url(../img/aboutBagDark.png) no-repeat center center;
+    background-size: cover;
     -webkit-transition-property: background;
     -o-transition-property: background;
     transition-property: background;
@@ -449,11 +461,14 @@ img {
       -webkit-transition-duration: 0.5s;
       -o-transition-duration: 0.5s;
       transition-duration: 0.5s; }
+  .about__item:last-child {
+    margin-right: 0; }
   .about__item:hover {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    background: url(../img/aboutBagLight.png) no-repeat center center; }
+    background: url(../img/aboutBagLight.png) no-repeat center center;
+    background-size: cover; }
     .about__item:hover .star__text {
       -webkit-transition-duration: 0.5s;
       -o-transition-duration: 0.5s;
@@ -473,7 +488,25 @@ img {
     font-family: "Open Sans";
     font-size: 13px;
     font-weight: 300;
-    padding: 10px 35px 0px 35px; }
+    padding: 10px 35px 10px 35px; }
+
+@media (max-width: 991px) {
+  .about__item {
+    margin-right: 15px; }
+  .about__item:last-child {
+    margin-right: 0; } }
+
+@media (max-width: 767px) {
+  .about__list {
+    display: inline-block;
+    text-align: center; }
+  .about__item {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .about__item:last-child {
+    margin: 0 auto;
+    margin-bottom: 0; } }
 
 /*end aboutUs*/
 /*Block services*/
@@ -530,6 +563,28 @@ img {
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 108px; }
+
+@media (max-width: 1199px) {
+  .boxes__item {
+    width: 50%; }
+  .boxes img {
+    width: 40%;
+    margin: 0 auto; } }
+
+@media (max-width: 991px) {
+  .boxes img {
+    width: 50%;
+    margin: 0 auto; } }
+
+@media (max-width: 767px) {
+  .boxes__item {
+    width: 100%;
+    margin-bottom: -40px; }
+  .boxes__item:last-child {
+    margin-bottom: 0; }
+  .boxes img {
+    width: 40%;
+    margin: 0 auto; } }
 
 /*end services*/
 /*Block team*/

@@ -1,7 +1,9 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	// поиск выпадающих элементов
+	border: 1px solid #f00 !important;
 }
 
 @import "_mixin";
@@ -10,98 +12,118 @@
 @import "slick";
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 /*---------------*/
 /*Titles*/
 
 .title {
-  margin: 0px auto;
-  text-align: center;
-  font-family: "ChaletComprime-CologneEighty";
-  font-size: 90px;
-  font-weight: 400;
-  line-height: 90px;
-  color: #42b3e5;
-  margin-top: 50px;
-  text-transform: uppercase;
+	margin: 0px auto;
+	text-align: center;
+	font-family: "ChaletComprime-CologneEighty";
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 90px;
+	color: #42b3e5;
+	margin-top: 50px;
+	text-transform: uppercase;
 
-  &.title__contrast {
-    color: #ffffff;
-    padding: 0;
-  }
+	&.title__contrast {
+		color: #ffffff;
+		padding: 0;
+	}
 }
 
 /*Subtitles*/
 
 .subtitle {
-  margin: 0px auto;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #737373;
-  margin-bottom: 40px;
-  font-family: "ChaletComprime-CologneEighty";
+	margin: 0px auto;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #737373;
+	margin-bottom: 40px;
+	font-family: "ChaletComprime-CologneEighty";
 
-  &.subtitle__contrast {
-    color: #ffffff;
-  }
+	&.subtitle__contrast {
+		color: #ffffff;
+	}
 }
 
 /*--------------*/
 
 .container_center {
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
 }
 
 /*header*/
 
 .header {
-  .container_center {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    padding-top: 28px;
-    padding-bottom: 26px;
-  }
+	.container_center {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		align-items: center;
+		padding-top: 28px;
+		padding-bottom: 26px;
+	}
 
-  &-nav {
-    display: flex;
-    justify-content: flex-end;
+	&-nav {
+		display: flex;
+		justify-content: flex-end;
 
-    &__item {
-      list-style: none;
-      margin-right: 50px;
-    }
+		&__item {
+			list-style: none;
+			margin-right: 50px;
+		}
 
-    &__item:last-child {
-      margin-right: 0;
-    }
+		&__item:last-child {
+			margin-right: 0;
+		}
 
-    &__link {
-      text-decoration: none;
-      color: #737373;
-      font-family: "ChaletComprime-CologneEighty";
-      font-size: 24px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.96px;
-      transition-property: color;
-      transition-duration: 0.3s;
+		&__link {
+			text-decoration: none;
+			color: #737373;
+			font-family: "ChaletComprime-CologneEighty";
+			font-size: 24px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 0.96px;
+			transition-property: color;
+			transition-duration: 0.3s;
 
-      &:hover {
-        color: #42b3e5;
-        cursor: pointer;
-        transition-duration: 0.3s;
-      }
-    }
-  }
+			&:hover {
+				color: #42b3e5;
+				cursor: pointer;
+				transition-duration: 0.3s;
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+	.header {
+		&-nav {
+			display: none;
+		}
+	.container_center {
+		grid-template-columns: auto;
+		
+	}
+		.logo {
+			margin: 0 auto;
+		}
+	}
+	
 }
 
 /*end header*/
@@ -109,225 +131,261 @@ img {
 /*block slider*/
 
 .providing-slider {
-  position: relative;
-  margin-bottom: 25px;
+	position: relative;
+	margin-bottom: 25px;
 
-  &__item {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: -120px;
-  }
+	&__item {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position-y: -120px;
+	}
 
-  &__title {
-    line-height: 1%;
-    display: inline-block;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 157px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 270px;
-    margin-bottom: 50px;
-  }
+	&__title {
+		line-height: 1%;
+		display: block;
+		text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 157px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-top: 270px;
+		margin-bottom: 50px;
+	}
 
-  &__text {
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 40px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+	&__text {
+		text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 40px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
 
-  &__btn {
-    margin-top: 16px;
-    margin-bottom: 146px;
-  }
+	&__btn {
+		margin-top: 16px;
+		margin-bottom: 146px;
+	}
 
-  &__link {
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 13px 66px 6px;
-    min-width: 240px;
-    background-image: url(../img/providingBtnBg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+	&__link {
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 10px 66px 10px;
+		min-width: 240px;
+		background-image: url(../img/providingBtnBg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
 
-    &:hover {
-      opacity: 0.6;
-    }
-  }
+		&:hover {
+			opacity: 0.6;
+		}
+	}
 
-  .slick-arrow {
-    // По умолчанию для slick слайдера кнопки переключения это тэги button
-    // Делаем сброс для стилей тэга button
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    cursor: pointer;
-    // Скрываем текст задавая размер шрифту 0
-    font-size: 0;
-    // Задаем размеры кнопок
-    width: 42px;
-    height: 42px;
-    // Позиционируем кнопки внутри слайдера
-    position: absolute;
-    // Сдвигем стрелки на половину высоты слайдера от верхнего края
-    top: 49%;
-    // Делаем обратный отступ на половину высоты кнопки чтобы кнопки не зависимо от высоты слайда всегда находились по центру
-    margin-top: 0px;
-    // Задаем номер слоя чтобы слайд не перекрывал кнопку с классом slick-prev
-    z-index: 10;
-  }
+	.slick-arrow {
+		// По умолчанию для slick слайдера кнопки переключения это тэги button
+		// Делаем сброс для стилей тэга button
+		border: none;
+		outline: 0;
+		background-color: transparent;
+		cursor: pointer;
+		// Скрываем текст задавая размер шрифту 0
+		font-size: 0;
+		// Задаем размеры кнопок
+		width: 42px;
+		height: 42px;
+		// Позиционируем кнопки внутри слайдера
+		position: absolute;
+		// Сдвигем стрелки на половину высоты слайдера от верхнего края
+		top: 49%;
+		// Делаем обратный отступ на половину высоты кнопки чтобы кнопки не зависимо от высоты слайда всегда находились по центру
+		margin-top: 0px;
+		// Задаем номер слоя чтобы слайд не перекрывал кнопку с классом slick-prev
+		z-index: 10;
+	}
 
-  .slick-prev {
-    // Задаем фоновое изображение для кнопки назад
-    background-image: url(../img/providingArrowLef.svg);
-    // Сдвигаем кнопку в сторону от левого слайда если это необходимо по дизайну
-    left: 2.5%;
-    opacity: 0.3;
+	.slick-prev {
+		// Задаем фоновое изображение для кнопки назад
+		background-image: url(../img/providingArrowLef.svg);
+		// Сдвигаем кнопку в сторону от левого слайда если это необходимо по дизайну
+		left: 2.5%;
+		opacity: 0.3;
 
-    &:hover {
-      opacity: 0.9;
-    }
-  }
+		&:hover {
+			opacity: 0.9;
+		}
+	}
 
-  .slick-next {
-    // Задаем фоновое изображение для кнопки вперед
-    background-image: url(../img/providingArrowRig.svg);
-    // Сдвигаем кнопку в сторону от правого слайда если это необходимо по дизайну
-    left: 93.5%;
-    opacity: 0.3;
+	.slick-next {
+		// Задаем фоновое изображение для кнопки вперед
+		background-image: url(../img/providingArrowRig.svg);
+		// Сдвигаем кнопку в сторону от правого слайда если это необходимо по дизайну
+		left: 94.5%;
+		opacity: 0.3;
 
-    &:hover {
-      opacity: 0.9;
-    }
-  }
+		&:hover {
+			opacity: 0.9;
+		}
+	}
 }
 
 @media (max-width: 1350px) {
-  .providing-slider {
-    &__item {
-      text-align: center;
-    }
-  }
+	.providing-slider {
+		&__item {
+			text-align: center;
+		}
+	}
 }
 
-@media (max-width: 1199px) {
-}
-@media (max-width: 991px) {
-}
 @media (max-width: 767px) {
-  .providing-slider {
-  }
-  .slick-arrow {
-    display: none;
-  }
+	.providing-slider {
+		.slick-prev,
+		.slick-next {
+			display: none;
+		}
+	}
 }
+
 /*end slider*/
 
 /*Block aboutUs*/
 
 .about {
-  padding-bottom: 60px;
+	padding-bottom: 60px;
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
 
-  &__item {
-    width: 363px;
-    padding-bottom: 27px;
-    background: url(../img/aboutBagDark.png) no-repeat center center;
-    transition-property: background;
-    transition-duration: 0.5s;
+	&__item {
+		max-width: 363px;
+		padding-bottom: 27px;
+		background: url(../img/aboutBagDark.png) no-repeat center center;
+		background-size: cover;
+		transition-property: background;
+		transition-duration: 0.5s;
 
-    img {
-      border-bottom: 4px solid #fff;
-    }
+		img {
+			border-bottom: 4px solid #fff;
+		}
 
-    .about__star {
-      text-align: center;
-      margin-top: -30px;
-      margin-bottom: 30px;
-    }
+		.about__star {
+			text-align: center;
+			margin-top: -30px;
+			margin-bottom: 30px;
+		}
 
-    .star {
-      display: inline-flex;
-      justify-content: center;
-      align-items: stretch;
-      width: 69px;
-      height: 47px;
-      background: #fff;
-      position: relative;
-    }
+		.star {
+			display: inline-flex;
+			justify-content: center;
+			align-items: stretch;
+			width: 69px;
+			height: 47px;
+			background: #fff;
+			position: relative;
+		}
 
-    .star:before,
-    .star:after {
-      content: "";
-      width: 0;
-      height: 0;
-      position: absolute;
-      left: 0;
-      border-left: 34px solid transparent;
-      border-right: 34px solid transparent;
-    }
+		.star:before,
+		.star:after {
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: 0;
+			border-left: 34px solid transparent;
+			border-right: 34px solid transparent;
+		}
 
-    .star:before {
-      top: -17px;
-      border-bottom: 17.2px solid #fff;
-    }
+		.star:before {
+			top: -17px;
+			border-bottom: 17.2px solid #fff;
+		}
 
-    .star:after {
-      bottom: -17px;
-      border-top: 17.2px solid #fff;
-    }
+		.star:after {
+			bottom: -17px;
+			border-top: 17.2px solid #fff;
+		}
 
-    .star__text {
-      // border: 1px solid red;
-      color: #272727;
-      font-family: "ChaletComprime-CologneEighty";
-      font-size: 60px;
-      font-weight: 400;
-      text-transform: uppercase;
-      transition-duration: 0.5s;
-    }
-  }
+		.star__text {
+			// border: 1px solid red;
+			color: #272727;
+			font-family: "ChaletComprime-CologneEighty";
+			font-size: 60px;
+			font-weight: 400;
+			text-transform: uppercase;
+			transition-duration: 0.5s;
+		}
+	}
 
-  &__item:hover {
-    transition-duration: 0.5s;
-    background: url(../img/aboutBagLight.png) no-repeat center center;
+	&__item:last-child {
+		margin-right: 0;
+	}
 
-    .star__text {
-      transition-duration: 0.5s;
-      color: #42b3e5;
-    }
-  }
+	&__item:hover {
+		transition-duration: 0.5s;
+		background: url(../img/aboutBagLight.png) no-repeat center center;
+		background-size: cover;
 
-  &__title {
-    padding-top: 5px;
-    text-align: center;
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 36px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+		.star__text {
+			transition-duration: 0.5s;
+			color: #42b3e5;
+		}
+	}
 
-  &__text {
-    text-align: center;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 13px;
-    font-weight: 300;
-    padding: 10px 35px 0px 35px;
-  }
+	&__title {
+		padding-top: 5px;
+		text-align: center;
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 36px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		text-align: center;
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 13px;
+		font-weight: 300;
+		padding: 10px 35px 10px 35px;
+	}
+}
+
+@media (max-width: 991px) {
+	.about {
+		&__item {
+			margin-right: 15px;
+		}
+
+		&__item:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.about {
+		&__list {
+			display: inline-block;
+			text-align: center;
+		}
+
+		&__item {
+			max-width: 80%;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+
+		&__item:last-child {
+			margin: 0 auto;
+			margin-bottom: 0;
+		}
+	}
 }
 
 /*end aboutUs*/
@@ -335,69 +393,104 @@ img {
 /*Block services*/
 
 .services {
-  padding-top: 60px;
-  background-image: url(../img/aboutBagLight.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	padding-top: 60px;
+	background-image: url(../img/aboutBagLight.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .boxes {
-  margin-top: 73px;
-  /*Расстояние между плитками*/
-  font-size: 0;
-  /*Сбрасываем высоту символов*/
-  letter-spacing: -1px;
-  /**/
-  margin-left: -99px;
-  /*Расстояние между плитками*/
+	margin-top: 73px;
+	/*Расстояние между плитками*/
+	font-size: 0;
+	/*Сбрасываем высоту символов*/
+	letter-spacing: -1px;
+	/**/
+	margin-left: -99px;
+	/*Расстояние между плитками*/
 
-  /*Делаю отрицательный внутренний отступ у родителя, равный отступу между плитками*/
-  /*Очищаем поток*/
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-    width: 100%;
-  }
+	/*Делаю отрицательный внутренний отступ у родителя, равный отступу между плитками*/
+	/*Очищаем поток*/
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+		width: 100%;
+	}
 
-  &__item {
-    display: inline-block;
-    /*Дочерний элемент делаем строчно блочным*/
-    vertical-align: top;
-    /*Выравниваем по вертикали*/
-    font-size: initial;
-    /*Восстанавливаем размер шрифта*/
-    letter-spacing: initial;
-    /**/
-    width: 25%;
-    /*Устанавливаем ширину, в зависимости от количества плиток по горизонтали*/
-    padding-left: 99px;
-    /*Установливаю внутренний отступ у плиток*/
-    margin-bottom: 20px;
-    /*Нижний отступ*/
-  }
+	&__item {
+		display: inline-block;
+		/*Дочерний элемент делаем строчно блочным*/
+		vertical-align: top;
+		/*Выравниваем по вертикали*/
+		font-size: initial;
+		/*Восстанавливаем размер шрифта*/
+		letter-spacing: initial;
+		/**/
+		width: 25%;
+		/*Устанавливаем ширину, в зависимости от количества плиток по горизонтали*/
+		padding-left: 99px;
+		/*Установливаю внутренний отступ у плиток*/
+		margin-bottom: 20px;
+		/*Нижний отступ*/
+	}
 
-  &__img {
-    margin-bottom: 35px;
+	&__img {
+		margin-bottom: 35px;
 
-    img {
-      display: block;
-      /*Делаю картинку блочным элементом*/
-      width: 100%;
-    }
-  }
+		img {
+			display: block;
+			/*Делаю картинку блочным элементом*/
+			width: 100%;
+		}
+	}
 
-  &__text {
-    text-align: center;
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 108px;
-  }
+	&__text {
+		text-align: center;
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		margin-bottom: 108px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.boxes{
+		&__item{
+			width: 50%;
+		}
+		img {
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.boxes{		
+		img {
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.boxes{
+		&__item{
+			width: 100%;
+			margin-bottom: -40px;
+		}
+		&__item:last-child{
+			margin-bottom: 0;
+		}
+		img {
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
 }
 
 /*end services*/
@@ -405,71 +498,71 @@ img {
 /*Block team*/
 
 .team {
-  display: flex;
-  padding-bottom: 60px;
-  flex-flow: row wrap;
+	display: flex;
+	padding-bottom: 60px;
+	flex-flow: row wrap;
 
-  &__item {
-    position: relative;
-    background: url(../img/aboutBagLight.png) no-repeat center;
-    height: 234px;
-    padding: 17px 8px 26px 15px;
-    transition-property: background;
-    transition-duration: 0.5s;
-  }
+	&__item {
+		position: relative;
+		background: url(../img/aboutBagLight.png) no-repeat center;
+		height: 234px;
+		padding: 17px 8px 26px 15px;
+		transition-property: background;
+		transition-duration: 0.5s;
+	}
 
-  &__img {
-    width: 234px;
-    height: 234px;
-  }
+	&__img {
+		width: 234px;
+		height: 234px;
+	}
 
-  &__item:nth-child(1):before {
-    content: "";
-    border: solid transparent;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    border-top-color: #399ac6;
-    border-width: 13px;
-    margin-left: -13px;
-  }
+	&__item:nth-child(1):before {
+		content: "";
+		border: solid transparent;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		border-top-color: #399ac6;
+		border-width: 13px;
+		margin-left: -13px;
+	}
 
-  &__item:nth-child(2):before {
-    content: "";
-    border: solid transparent;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    border-bottom-color: #399ac6;
-    border-width: 13px;
-    margin-left: -13px;
-  }
+	&__item:nth-child(2):before {
+		content: "";
+		border: solid transparent;
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		border-bottom-color: #399ac6;
+		border-width: 13px;
+		margin-left: -13px;
+	}
 
-  &__item:hover {
-    background: url(../img/aboutBagDark.png) no-repeat center;
-    transition-duration: 0.5s;
-  }
+	&__item:hover {
+		background: url(../img/aboutBagDark.png) no-repeat center;
+		transition-duration: 0.5s;
+	}
 
-  &__title {
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
+	&__title {
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
 
-  &__text {
-    width: 195px;
-    height: 160px;
-    overflow: hidden;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-  }
+	&__text {
+		width: 195px;
+		height: 160px;
+		overflow: hidden;
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 20px;
+	}
 }
 
 /*end team*/
@@ -477,256 +570,251 @@ img {
 /*Block contact-us*/
 
 .contact-us {
-  background: url("../img/contactUsBg.png") no-repeat center center;
-  background-size: cover;
-  padding: 120px 0px;
+	background: url("../img/contactUsBg.png") no-repeat center center;
+	background-size: cover;
+	padding: 120px 0px;
 
-  &__bg-img {
-    background: url("../img/contactUsBgForm.png") no-repeat center center;
-    background-size: cover;
-    padding-top: 40px;
-    @extend %clear_a;
-  }
+	&__bg-img {
+		background: url("../img/contactUsBgForm.png") no-repeat center center;
+		background-size: cover;
+		padding-top: 40px;
+		@extend %clear_a;
+	}
 }
 
 .contact-info {
-  border: 1px solid red;
-  display: block;
-  // float: left;
-  // margin-left: 30px;
-  // margin-right: 110px;
-  // max-width: 500px;
+	border: 1px solid red;
+	display: block;
+	// float: left;
+	// margin-left: 30px;
+	// margin-right: 110px;
+	// max-width: 500px;
 
-  &__title {
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #13849c;
-    box-shadow: 0 1px #53cde5;
-    margin-bottom: 20px;
-  }
+	&__title {
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #13849c;
+		box-shadow: 0 1px #53cde5;
+		margin-bottom: 20px;
+	}
 
-  &__list {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 30px auto;
-  }
+	&__list {
+		list-style: none;
+		display: grid;
+		grid-template-columns: 30px auto;
+	}
 
-  &__item {
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-weight: 200;
-  }
+	&__item {
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-weight: 200;
+	}
 }
 
 .icon-contactUscalendar {
-  font-size: 19px;
-  margin-top: 10px;
-  color: #fff;
+	font-size: 19px;
+	margin-top: 10px;
+	color: #fff;
 }
 
 .icon-contactUslocation {
-  font-size: 22px;
-  margin-right: 10px;
-  margin-top: 10px;
-  color: #fff;
+	font-size: 22px;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #fff;
 }
 
 .icon-contactUsphone {
-  font-size: 22px;
-  margin-right: 10px;
-  margin-top: 10px;
-  color: #fff;
+	font-size: 22px;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #fff;
 }
 
 .icon-contactUsfax {
-  font-size: 22px;
-  margin-right: 10px;
-  margin-top: 10px;
-  color: #fff;
+	font-size: 22px;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #fff;
 }
 
 .icon-contactUsemail {
-  font-size: 19px;
-  margin-right: 10px;
-  margin-top: 10px;
-  color: #fff;
+	font-size: 19px;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #fff;
 }
 
 .email {
-  font-family: "Open Sans";
-  font-style: italic;
+	font-family: "Open Sans";
+	font-style: italic;
 }
 
 .caption {
-  color: #ffffff;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 44px;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 44px;
 }
 
 .contact-message {
-  display: block;
-  border: 1px solid green;
-  // float: right;
-  // margin-right: 30px;
-  // max-width: 500px;
+	display: block;
+	border: 1px solid green;
+	// float: right;
+	// margin-right: 30px;
+	// max-width: 500px;
 
-  &__title {
-    color: #ffffff;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #13849c;
-    box-shadow: 0 1px #53cde5;
-    margin-bottom: 20px;
-  }
+	&__title {
+		color: #ffffff;
+		font-family: "ChaletComprime-CologneEighty";
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #13849c;
+		box-shadow: 0 1px #53cde5;
+		margin-bottom: 20px;
+	}
 }
 
 .form {
-  margin-bottom: 100px;
+	margin-bottom: 100px;
 
-  fieldset {
-    border: none;
-  }
+	fieldset {
+		border: none;
+	}
 
-  &__list {
-    list-style: none;
-  }
+	&__list {
+		list-style: none;
+	}
 }
 
 label {
-  display: block;
-  padding-left: 20px;
-  background: #ffffff;
-  margin-bottom: 5px;
+	display: block;
+	padding-left: 20px;
+	background: #ffffff;
+	margin-bottom: 5px;
 
-  & span {
-    display: inline-block;
-    opacity: 0.8;
-    color: #084a5c;
-    font-family: "Open Sans";
-    font-size: 13px;
-    font-weight: 400;
-  }
+	& span {
+		display: inline-block;
+		opacity: 0.8;
+		color: #084a5c;
+		font-family: "Open Sans";
+		font-size: 13px;
+		font-weight: 400;
+	}
 }
 
 .mess {
-  vertical-align: top;
-  padding-top: 10px;
+	vertical-align: top;
+	padding-top: 10px;
 }
 
 #name,
 #email,
 #phone,
 #message {
-  border-style: none;
-  padding: 13px;
-  min-width: 410px;
-  outline: none;
+	border-style: none;
+	padding: 13px;
+	min-width: 410px;
+	outline: none;
 }
 
 #message {
-  padding-bottom: 113px;
-  resize: none;
+	padding-bottom: 113px;
+	resize: none;
 }
 
 .btn_submit {
-  // float: right;
-  color: #ffffff;
-  font-family: "ChaletComprime-HongKongEighty";
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  background: url(../img/bg_btn.png) center center;
-  padding: 17px 61px;
-  border: none;
-  cursor: pointer;
-  transition-property: color, background;
-  transition-duration: 0.6s;
+	// float: right;
+	color: #ffffff;
+	font-family: "ChaletComprime-HongKongEighty";
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	background: url(../img/bg_btn.png) center center;
+	padding: 17px 61px;
+	border: none;
+	cursor: pointer;
+	transition-property: color, background;
+	transition-duration: 0.6s;
 }
 
 .btn_submit:hover {
-  background: #ffffff;
-  color: #000000;
-  transition-duration: 0.6s;
+	background: #ffffff;
+	color: #000000;
+	transition-duration: 0.6s;
 }
 
-@media (max-width: 1199px) {
-  
-}
+@media (max-width: 1199px) {}
 
-@media (max-width: 991px) {
-}
+@media (max-width: 991px) {}
 
-@media (max-width: 767px) {
-}
+@media (max-width: 767px) {}
 
 /*end contactus*/
 
 /*Block footer*/
 
 .footer {
-  padding-top: 26px;
-  padding-bottom: 26px;
+	padding-top: 26px;
+	padding-bottom: 26px;
 
-  .container_center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+	.container_center {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-  &__copyring {
-    opacity: 0.5;
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-weight: 300;
-  }
+	&__copyring {
+		opacity: 0.5;
+		color: #000000;
+		font-family: "Open Sans";
+		font-size: 12px;
+		font-weight: 300;
+	}
 
-  &__soc {
-    a {
-      text-decoration: none;
-    }
+	&__soc {
+		a {
+			text-decoration: none;
+		}
 
-    .icon-facebook {
-      font-size: 23px;
-      color: #b1b1b1;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
+		.icon-facebook {
+			font-size: 23px;
+			color: #b1b1b1;
+			transition-property: color;
+			transition-duration: 0.6s;
+		}
 
-    .icon-twitter {
-      font-size: 23px;
-      color: #b1b1b1;
-      margin: 0px 13px 0px 5px;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
+		.icon-twitter {
+			font-size: 23px;
+			color: #b1b1b1;
+			margin: 0px 13px 0px 5px;
+			transition-property: color;
+			transition-duration: 0.6s;
+		}
 
-    .icon-skype {
-      font-size: 23px;
-      color: #b1b1b1;
-      transition-property: color;
-      transition-duration: 0.6s;
-    }
+		.icon-skype {
+			font-size: 23px;
+			color: #b1b1b1;
+			transition-property: color;
+			transition-duration: 0.6s;
+		}
 
-    .icon-facebook:hover,
-    .icon-twitter:hover,
-    .icon-skype:hover {
-      color: #42b3e5;
-      transition-duration: 0.6s;
-    }
-  }
+		.icon-facebook:hover,
+		.icon-twitter:hover,
+		.icon-skype:hover {
+			color: #42b3e5;
+			transition-duration: 0.6s;
+		}
+	}
 
-  @media (max-width: 1199px) {
-  }
+	@media (max-width: 1199px) {}
 }
 
 /*end footer*/
