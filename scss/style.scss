@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     // поиск выпадающих элементов
-    border: 1px solid #f00 !important;
+//    border: 1px solid #f00 !important;
 }
 
 @import "_mixin";
@@ -798,6 +798,7 @@ label {
         margin-left: 15px;
         margin-right: 0px;
         min-width: 440px;
+
     }
 
     .contact-message {
@@ -812,11 +813,7 @@ label {
         min-width: 350px;
     }
 
-    .btn_submit {
-        float: none;
-        margin: 50px auto -51px;
 
-    }
 }
 
 @media (max-width: 991px) {
@@ -845,25 +842,38 @@ label {
         padding: 0 15px;
     }
 
+	.btn_submit {
+        float: none;
+        margin: 50px auto -51px;
+
+    }
+
 
 }
 
 @media (max-width: 767px) {
     .contact-info {
+		 min-width: 240px;
         &-block {
             display: block;
             max-width: 400px;
             margin: 0 auto;
         }
     }
+
+	.contact-message{
+		max-width: 430px;
+	}
+
+
     #name{
-        max-width: 240px;
+        min-width: 230px;
     }
     #email{
-        min-width: 200px;
+        min-width: 220px;
     }
     #phone{
-        min-width: 200px;
+        min-width: 190px;
     }
     #message {
         min-width: 200px;
