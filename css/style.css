@@ -675,8 +675,11 @@ img {
     padding-top: 40px; }
 
 .contact-info {
-  border: 1px solid red;
-  display: block; }
+  display: inline-block;
+  float: left;
+  margin-left: 30px;
+  margin-right: 110px;
+  min-width: 500px; }
   .contact-info__title {
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
@@ -738,8 +741,10 @@ img {
   line-height: 44px; }
 
 .contact-message {
-  display: block;
-  border: 1px solid green; }
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+  min-width: 500px; }
   .contact-message__title {
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
@@ -747,7 +752,6 @@ img {
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 20px;
-    border-bottom: 1px solid #13849c;
     -webkit-box-shadow: 0 1px #53cde5;
     box-shadow: 0 1px #53cde5;
     margin-bottom: 20px; }
@@ -790,6 +794,7 @@ label {
   resize: none; }
 
 .btn_submit {
+  float: right;
   color: #ffffff;
   font-family: "ChaletComprime-HongKongEighty";
   font-size: 24px;
