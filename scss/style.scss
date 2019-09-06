@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     // поиск выпадающих элементов
-    // border: 1px solid #f00 !important;
+    border: 1px solid #f00 !important;
 }
 
 @import "_mixin";
@@ -501,6 +501,9 @@ img {
 
 /*end services*/
 
+
+
+
 /*Block team*/
 
 .team {
@@ -593,6 +596,10 @@ img {
 
 /*end team*/
 
+
+
+
+
 /*Block contact-us*/
 
 .contact-us {
@@ -609,13 +616,13 @@ img {
 }
 
 .contact-info {
-    //   border: 1px solid red;
-
-    display: inline-block;
-       float: left;
+//        border: 1px solid red;
+    display: block;
+    float: left;
     margin-left: 30px;
     margin-right: 110px;
     min-width: 500px;
+
 
     &__title {
         color: #ffffff;
@@ -689,13 +696,13 @@ img {
     line-height: 44px;
 }
 
+
 .contact-message {
-    //   display: block;
-    //   border: 3px solid green;
-    display: inline-block;
+    //    border: 1px solid green;
+    display: block;
     float: right;
     margin-right: 30px;
-    min-width: 500px;
+    max-width: 500px;
 
     &__title {
         color: #ffffff;
@@ -714,8 +721,6 @@ img {
 .form {
     margin-bottom: 100px;
 
-    //   display: inline-block;
-    //   border: 1px solid red;
     fieldset {
         border: none;
     }
@@ -762,6 +767,7 @@ label {
 }
 
 .btn_submit {
+    display: block;
     float: right;
     color: #ffffff;
     font-family: "ChaletComprime-HongKongEighty";
@@ -782,11 +788,87 @@ label {
     transition-duration: 0.6s;
 }
 
-@media (max-width: 1199px) {}
+@media (max-width: 1350px){
+    .contact-info {
+        margin-right: 50px;
+    }
+}
+@media (max-width: 1199px) {
+    .contact-info {
+        margin-left: 15px;
+        margin-right: 0px;
+        min-width: 440px;
+    }
 
-@media (max-width: 991px) {}
+    .contact-message {
+        margin-right: 15px;
+        max-width: 500px;
+    }
 
-@media (max-width: 767px) {}
+    #name,
+    #email,
+    #phone,
+    #message {
+        min-width: 350px;
+    }
+
+    .btn_submit {
+        float: none;
+        margin: 50px auto -51px;
+
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-info {
+        float: none;
+        margin: 0 auto;
+        max-width: 900px;
+
+        &__title {
+            text-align: center;
+        }
+
+        padding: 0 15px;
+    }
+
+    .contact-message {
+        float: none;
+        margin: 0 auto;
+        max-width: 900px;
+
+        &__title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        padding: 0 15px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .contact-info {
+        &-block {
+            display: block;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+    #name{
+        max-width: 240px;
+    }
+    #email{
+        min-width: 200px;
+    }
+    #phone{
+        min-width: 200px;
+    }
+    #message {
+        min-width: 200px;
+    }
+}
 
 
 /*end contactus*/
