@@ -3,7 +3,8 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid #f00 !important; }
 
 .contact-us__bg-img:after {
   content: '';
@@ -264,7 +265,9 @@ img {
 
 /*header*/
 .header .container_center {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -309,6 +312,7 @@ img {
   .header-nav {
     display: none; }
   .header .container_center {
+    -ms-grid-columns: auto;
     grid-template-columns: auto; }
   .header .logo {
     margin: 0 auto; } }
@@ -675,7 +679,7 @@ img {
     padding-top: 40px; }
 
 .contact-info {
-  display: inline-block;
+  display: block;
   float: left;
   margin-left: 30px;
   margin-right: 110px;
@@ -693,7 +697,9 @@ img {
     margin-bottom: 20px; }
   .contact-info__list {
     list-style: none;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 30px auto;
     grid-template-columns: 30px auto; }
   .contact-info__item {
     color: #ffffff;
@@ -741,10 +747,10 @@ img {
   line-height: 44px; }
 
 .contact-message {
-  display: inline-block;
+  display: block;
   float: right;
   margin-right: 30px;
-  min-width: 500px; }
+  max-width: 500px; }
   .contact-message__title {
     color: #ffffff;
     font-family: "ChaletComprime-CologneEighty";
@@ -794,6 +800,7 @@ label {
   resize: none; }
 
 .btn_submit {
+  display: block;
   float: right;
   color: #ffffff;
   font-family: "ChaletComprime-HongKongEighty";
@@ -817,6 +824,58 @@ label {
   -webkit-transition-duration: 0.6s;
   -o-transition-duration: 0.6s;
   transition-duration: 0.6s; }
+
+@media (max-width: 1350px) {
+  .contact-info {
+    margin-right: 50px; } }
+
+@media (max-width: 1199px) {
+  .contact-info {
+    margin-left: 15px;
+    margin-right: 0px;
+    min-width: 440px; }
+  .contact-message {
+    margin-right: 15px;
+    max-width: 500px; }
+  #name,
+  #email,
+  #phone,
+  #message {
+    min-width: 350px; }
+  .btn_submit {
+    float: none;
+    margin: 50px auto -51px; } }
+
+@media (max-width: 991px) {
+  .contact-info {
+    float: none;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 15px; }
+    .contact-info__title {
+      text-align: center; }
+  .contact-message {
+    float: none;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 15px; }
+    .contact-message__title {
+      text-align: center;
+      margin-top: 20px; } }
+
+@media (max-width: 767px) {
+  .contact-info-block {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto; }
+  #name {
+    max-width: 240px; }
+  #email {
+    min-width: 200px; }
+  #phone {
+    min-width: 200px; }
+  #message {
+    min-width: 200px; } }
 
 /*end contactus*/
 /*Block footer*/
