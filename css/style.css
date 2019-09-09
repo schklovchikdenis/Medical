@@ -380,7 +380,7 @@ img {
       opacity: 0.9; }
   .providing-slider .slick-next {
     background-image: url(../img/providingArrowRig.svg);
-    left: 94.5%;
+    left: 92%;
     opacity: 0.3; }
     .providing-slider .slick-next:hover {
       opacity: 0.9; }
@@ -393,6 +393,14 @@ img {
   .providing-slider .slick-prev,
   .providing-slider .slick-next {
     display: none; } }
+
+@media (max-width: 500px) {
+  .providing-slider__title {
+    font-size: 90px; }
+  .providing-slider__text {
+    font-size: 24px; }
+  .providing-slider__btn {
+    margin-top: 35px; } }
 
 /*end slider*/
 /*Block aboutUs*/
@@ -447,10 +455,10 @@ img {
       border-right: 34px solid transparent; }
     .about__item .star:before {
       top: -17px;
-      border-bottom: 17.2px solid #fff; }
+      border-bottom: 17.4px solid #fff; }
     .about__item .star:after {
       bottom: -17px;
-      border-top: 17.2px solid #fff; }
+      border-top: 17.4px solid #fff; }
     .about__item .star__text {
       color: #272727;
       font-family: "ChaletComprime-CologneEighty";
@@ -459,7 +467,9 @@ img {
       text-transform: uppercase;
       -webkit-transition-duration: 0.5s;
       -o-transition-duration: 0.5s;
-      transition-duration: 0.5s; }
+      transition-duration: 0.5s;
+      line-height: 1px;
+      padding-top: 22px; }
   .about__item:last-child {
     margin-right: 0; }
   .about__item:hover {

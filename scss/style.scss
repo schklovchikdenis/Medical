@@ -3,7 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	// поиск выпадающих элементов
-	//    border: 1px solid #f00 !important;
+//	    border: 1px solid #f00 !important;
 }
 
 @import "_mixin";
@@ -226,7 +226,7 @@ img {
 		// Задаем фоновое изображение для кнопки вперед
 		background-image: url(../img/providingArrowRig.svg);
 		// Сдвигаем кнопку в сторону от правого слайда если это необходимо по дизайну
-		left: 94.5%;
+		left: 92%;
 		opacity: 0.3;
 
 		&:hover {
@@ -249,6 +249,19 @@ img {
 		.slick-prev,
 		.slick-next {
 			display: none;
+		}
+	}
+}
+@media (max-width: 500px){
+	.providing-slider{
+		&__title{
+            font-size: 90px;
+        }
+        &__text{
+            font-size: 24px;
+        }
+		&__btn{
+			margin-top: 35px;
 		}
 	}
 }
@@ -309,12 +322,12 @@ img {
 
 		.star:before {
 			top: -17px;
-			border-bottom: 17.2px solid #fff;
+			border-bottom: 17.4px solid #fff;
 		}
 
 		.star:after {
 			bottom: -17px;
-			border-top: 17.2px solid #fff;
+			border-top: 17.4px solid #fff;
 		}
 
 		.star__text {
@@ -325,6 +338,8 @@ img {
 			font-weight: 400;
 			text-transform: uppercase;
 			transition-duration: 0.5s;
+            line-height: 1px;
+			padding-top: 22px;
 		}
 	}
 
