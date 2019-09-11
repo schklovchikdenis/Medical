@@ -3,7 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	// поиск выпадающих элементов
-//	    border: 1px solid #f00 !important;
+	    // border: 1px solid #f00 !important;
 }
 
 @import "_mixin";
@@ -354,8 +354,8 @@ img {
 			font-weight: 400;
 			text-transform: uppercase;
 			transition-duration: 0.5s;
-            line-height: 1px;
-			padding-top: 22px;
+            line-height: 50px;
+			// padding-top: 22px;
 		}
 	}
 
