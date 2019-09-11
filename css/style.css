@@ -5,7 +5,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.contact-us__bg-img:after {
+.header:after, .contact-us__bg-img:after {
   content: '';
   display: table;
   clear: both; }
@@ -263,49 +263,61 @@ img {
   margin: 0 auto; }
 
 /*header*/
-.header .container_center {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 1fr;
-  grid-template-columns: auto 1fr;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
   padding-top: 28px;
   padding-bottom: 26px; }
-
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
-  .header-nav__item {
-    list-style: none;
-    margin-right: 50px; }
-  .header-nav__item:last-child {
-    margin-right: 0; }
-  .header-nav__link {
-    text-decoration: none;
-    color: #737373;
-    font-family: "ChaletComprime-CologneEighty";
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.96px;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
-    transition-duration: 0.3s; }
-    .header-nav__link:hover {
-      color: #42b3e5;
-      cursor: pointer;
+  .header.stiky {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+  .header__mobile {
+    display: none; }
+  .header .container_center {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+    grid-template-columns: auto 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .header-nav__item {
+      list-style: none;
+      margin-right: 50px; }
+    .header-nav__item:last-child {
+      margin-right: 0; }
+    .header-nav__link {
+      text-decoration: none;
+      color: #737373;
+      font-family: "ChaletComprime-CologneEighty";
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.96px;
+      -webkit-transition-property: color;
+      -o-transition-property: color;
+      transition-property: color;
       -webkit-transition-duration: 0.3s;
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s; }
+      .header-nav__link:hover {
+        color: #42b3e5;
+        cursor: pointer;
+        -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        transition-duration: 0.3s; }
 
 @media (max-width: 991px) {
   .header-nav {
@@ -320,7 +332,8 @@ img {
 /*block slider*/
 .providing-slider {
   position: relative;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  padding-top: 125px; }
   .providing-slider__item {
     background-repeat: no-repeat;
     background-position: center;

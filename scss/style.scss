@@ -65,12 +65,26 @@ img {
 /*header*/
 
 .header {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	z-index: 10;
+	padding-top: 28px;
+	padding-bottom: 26px;	
+	@extend %clear_a;
+	&.stiky {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #fff;
+		box-shadow: 0 0 20px rgba(#000, .3);
+	}
+	&__mobile {
+		display: none;		
+	}
 	.container_center {
 		display: grid;
 		grid-template-columns: auto 1fr;
 		align-items: center;
-		padding-top: 28px;
-		padding-bottom: 26px;
 	}
 
 	&-nav {
@@ -136,7 +150,8 @@ img {
 .providing-slider {
 	position: relative;
 	margin-bottom: 25px;
-
+	padding-top: 125px;
+	
 	&__item {
 		background-repeat: no-repeat;
 		background-position: center;
@@ -233,6 +248,7 @@ img {
 			opacity: 0.9;
 		}
 	}
+	
 }
 
 @media (max-width: 1350px) {
