@@ -88,15 +88,6 @@ img {
     display: none;
   }
 
-  // &__mobile{
-  //   display: none;
-  // }
-  .container_center {
-    // display: grid;
-    // grid-template-columns: auto 1fr;
-    // align-items: center;
-  }
-
   &-nav {
     display: flex;
     justify-content: flex-end;
@@ -165,8 +156,6 @@ img {
 
 @media (max-width: 991px) {
   .header {
-    // padding-top: 18px;
-    // padding-bottom: 16px;
     &-nav {
       display: none;
     }
@@ -586,10 +575,12 @@ img {
 .team {
   display: flex;
   padding-bottom: 60px;
-  flex-flow: row;
+  flex-flow: row wrap;
 
   &__block {
-    max-width: 234px;
+    display: flex;
+    flex-flow: column;
+    // max-width: 200px;
   }
 
   &__item {
@@ -644,7 +635,7 @@ img {
   }
 
   &__text {
-    width: 195px;
+    max-width: 195px;
     height: 160px;
     overflow: hidden;
     color: #ffffff;
@@ -655,23 +646,72 @@ img {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1215px) {
   .team {
-    flex-flow: column;
+    flex-flow: row;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: space-around;
 
     &__block {
-      max-width: 300px;
+      max-width: 234px;
       margin-bottom: 10px;
     }
 
     &__img {
+      order: 0;
+      width: 220px;
+      height: 220px;
     }
 
     &__item {
+      order: 1;
+      height: 240px;
+      &:nth-child(1):before {
+        content: "";
+        border: solid transparent;
+        position: absolute;
+        top: -11%;
+        left: 50%;
+        border-bottom-color: #399ac6;
+        border-width: 13px;
+        margin-left: -13px;
+      }
     }
   }
 }
+@media (max-width: 1150px) {
+  .team {
+    &__block {
+      max-width: 370px;
+      margin-bottom: 10px;
+    }
+    &__img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .team {
+    justify-content: space-around;
+    // &__block {
+    //   // max-width: 370px;
+    //   margin-bottom: 10px;
+    // }
+    &__img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .team { 
+    justify-content: center;   
+    
+  }
+}
+
 
 /*end team*/
 
