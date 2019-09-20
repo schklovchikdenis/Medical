@@ -1,9 +1,17 @@
-$(document).ready(function() {  
+$(document).ready(function () {
       $('.providing-slider').slick({
-      infinite: true,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 5000,
+            infinite: true,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [
+                  {
+                        breakpoint: 767,
+                        settings: {
+                              arrows: false,
+                        }
+                  }
+            ]
       });
 
       var HeaderTop = $('#home').offset().top;

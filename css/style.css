@@ -3,8 +3,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid #f00 !important; }
+  box-sizing: border-box; }
 
 .header:after, .contact-us__bg-img:after {
   content: '';
@@ -442,11 +441,6 @@ img {
 @media (max-width: 991px) {
   .providing-slider {
     padding-top: 55px; } }
-
-@media (max-width: 767px) {
-  .providing-slider .slick-prev,
-  .providing-slider .slick-next {
-    display: none; } }
 
 @media (max-width: 500px) {
   .providing-slider__title {

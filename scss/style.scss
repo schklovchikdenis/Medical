@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     // поиск выпадающих элементов
-    border: 1px solid #f00 !important;
+    // border: 1px solid #f00 !important;
 }
 
 @import "_mixin";
@@ -311,14 +311,6 @@ img {
     }
 }
 
-@media (max-width: 767px) {
-    .providing-slider {
-        .slick-prev,
-        .slick-next {
-            display: none;
-        }
-    }
-}
 
 @media (max-width: 500px) {
     .providing-slider {
